@@ -1090,6 +1090,13 @@
             🗺️ Get Directions
           </a>
         </div>
+        <div class="mt-3">
+  <button id="openEmailModal"
+    class="inline-block mt-2 px-4 py-2 rounded-lg bg-gradient-to-r from-amber-500 to-yellow-500 
+           text-white font-medium text-sm shadow hover:shadow-lg hover:scale-105 transition">
+    ✉️ Send us an Email
+  </button>
+</div>
       </div>
     </div>
 
@@ -2000,8 +2007,114 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const emailModal = document.getElementById("emailModal");
+  const openEmailModal = document.getElementById("openEmailModal");
+  const closeEmailModal = document.getElementById("closeEmailModal");
+  const form = document.getElementById("templeContactForm");
+  const successMsg = document.getElementById("formSuccess");
+  const errorMsg = document.getElementById("formError");
+
+  // Open modal
+  openEmailModal.addEventListener("click", () => {
+    emailModal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  });
+
+  // Close modal
+  const closeModal = () => {
+    emailModal.classList.add("hidden");
+    document.body.style.overflow = "auto";
+  };
+
+  closeEmailModal.addEventListener("click", closeModal);
+  emailModal.addEventListener("click", (e) => {
+    if (e.target === emailModal) closeModal();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !emailModal.classList.contains("hidden")) closeModal();
+  });
+
+  // Form submission via AJAX
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    successMsg.classList.add("hidden");
+    errorMsg.classList.add("hidden");
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        successMsg.classList.remove("hidden");
+        form.reset();
+      } else throw new Error();
+    } catch {
+      errorMsg.classList.remove("hidden");
+    }
+  });
+});
+</script>
+
+
+
+<!-- 🌿 Contact Form Modal -->
+<div id="emailModal" 
+     class="fixed inset-0 hidden z-[70] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+  <div class="relative bg-white rounded-3xl shadow-2xl max-w-lg w-full p-8 animate-fadeIn">
+
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6 border-b border-amber-100 pb-3">
+      <h4 class="text-2xl font-extrabold text-amber-800">📧 Send us a Message</h4>
+      <button id="closeEmailModal"
+        class="flex items-center gap-1 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-50 
+               border border-amber-200 text-amber-800 font-semibold text-sm shadow hover:scale-105 transition">
+        ✕ Close
+      </button>
+    </div>
+
+    <!-- Contact Form -->
+    <form id="templeContactForm" action="https://formspree.io/f/xovyqkrq" method="POST" class="space-y-4">
+
+      <div>
+        <label class="block text-sm font-semibold text-amber-800 mb-1">Full Name</label>
+        <input type="text" name="name" required
+               class="w-full border border-amber-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-amber-400 outline-none">
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold text-amber-800 mb-1">Email Address</label>
+        <input type="email" name="_replyto" required
+               class="w-full border border-amber-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-amber-400 outline-none">
+      </div>
+
+      <div>
+        <label class="block text-sm font-semibold text-amber-800 mb-1">Message</label>
+        <textarea name="message" rows="4" required
+                  class="w-full border border-amber-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-amber-400 outline-none"></textarea>
+      </div>
+
+      <button type="submit"
+        class="w-full py-3 rounded-full bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400 
+               text-white font-semibold shadow-md hover:shadow-amber-300/60 hover:scale-105 transition">
+        ✨ Send Message
+      </button>
+
+      <p id="formSuccess" class="text-green-700 font-semibold text-center hidden">✅ Message sent successfully!</p>
+      <p id="formError" class="text-red-600 font-semibold text-center hidden">❌ Something went wrong. Try again.</p>
+
+    </form>
+  </div>
+</div>
+
 </body>
 </html>
+
 
 
 
