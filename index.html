@@ -1963,8 +1963,46 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Generic auto-scroll function
+  function setupAutoScroll(containerId, interval = 4000) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    let index = 0;
+    let total = container.children.length;
+
+    function scrollToIndex(i) {
+      container.scrollTo({ left: i * container.clientWidth, behavior: "smooth" });
+    }
+
+    function autoNext() {
+      index = (index + 1) % total;
+      scrollToIndex(index);
+    }
+
+    // Auto scroll every few seconds
+    let autoScroll = setInterval(autoNext, interval);
+
+    // Pause when hovering or interacting
+    container.addEventListener("mouseenter", () => clearInterval(autoScroll));
+    container.addEventListener("mouseleave", () => autoScroll = setInterval(autoNext, interval));
+    container.addEventListener("touchstart", () => clearInterval(autoScroll));
+    container.addEventListener("touchend", () => autoScroll = setInterval(autoNext, interval));
+  }
+
+  // ✅ Apply auto-scroll to both Seva & Events sections
+  setupAutoScroll("seva-scroll", 4000);
+  setupAutoScroll("event-scroll", 5500);
+
+});
+</script>
+
 </body>
 </html>
+
 
 
 
