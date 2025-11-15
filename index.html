@@ -716,12 +716,12 @@
                       backdrop-blur-md mb-6">
           </div>
 <!-- Event 1 -->
-<button onclick="openInvitationModal('images/events/event1.png')" 
+<!--<button onclick="openInvitationModal('images/events/event1.png')" 
   class="inline-block px-8 py-3 md:px-10 md:py-4 rounded-full text-base md:text-lg text-white font-semibold
          bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400
          shadow-lg hover:scale-105 hover:shadow-amber-300/50 transition-transform duration-500">
   📜 View Invitation
-</button>
+</button>-->
 
         </div>
       </div>
@@ -992,7 +992,7 @@
     </div>
 
     <div class="text-center sm:text-left">
-      <p class="text-lg font-bold text-amber-800">UPI ID: 9902105637</p>
+      <p class="text-lg font-bold text-amber-800">UPI ID: 9902105637@ybl</p>
       <p class="text-sm text-slate-600">Temple UPI for online donations</p>
     </div>
   </div>
@@ -1633,7 +1633,7 @@ function openSevaModal(type, amount) {
 
   const sevaName = sevaNames[type] || "Temple Seva Offering";
   const encodedNote = encodeURIComponent(`Offering for ${sevaName}`);
-  const upiUrl = `upi://pay?pa=9902105637@upi&pn=ShreeDhanvantariTemple&am=${amount}&cu=INR&tn=${encodedNote}`;
+  const upiUrl = `upi://pay?pa=9902105637@ybl&pn=ShreeDhanvantariTemple&am=${amount}&cu=INR&tn=${encodedNote}`;
   const whatsappUrl = createWhatsAppLink(sevaName);
 
   const panel = document.getElementById("modalPanel");
@@ -1651,7 +1651,7 @@ function openSevaModal(type, amount) {
           Scan this QR code to pay ₹${amount.toLocaleString()}
         </p>
         <p class="text-sm text-slate-700">
-          UPI ID: <span class="font-bold text-amber-800">9902105637</span>
+          UPI ID: <span class="font-bold text-amber-800">9902105637@ybl</span>
         </p>
       </div>
 
@@ -1798,7 +1798,7 @@ function openModal(type) {
   if (type === "donate") {
     const upiID = "9902105637";
     const upiNote = encodeURIComponent("Temple Donation - Lord Dhanvantari Temple");
-    const upiUrl = `upi://pay?pa=${upiID}@upi&pn=ShreeDhanvantariTemple&cu=INR&tn=${upiNote}`;
+    const upiUrl = `upi://pay?pa=${upiID}@ybl&pn=ShreeDhanvantariTemple&cu=INR&tn=${upiNote}`;
     const whatsappUrl = createWhatsAppDonationLink();
 
     panel.innerHTML = `
@@ -2086,6 +2086,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
+
 
 
 
