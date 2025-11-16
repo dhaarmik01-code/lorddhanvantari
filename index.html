@@ -2042,72 +2042,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-
-<script>
-// Save original video grid
-let originalVideoGridHTML = "";
-document.addEventListener("DOMContentLoaded", () => {
-  const grid = document.getElementById("videoGrid");
-  originalVideoGridHTML = grid.innerHTML;
-
-  // Attach close button
-  document.getElementById("closeVideoModal").addEventListener("click", closeVideoModal);
-
-  // Close when clicking outside
-  document.getElementById("videoModal").addEventListener("click", (e) => {
-    if (e.target.id === "videoModal") closeVideoModal();
-  });
-
-  // ESC key
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeVideoModal();
-  });
-});
-
-// OPEN SINGLE VIDEO
-function openVideoModal(src) {
-  const modal = document.getElementById("videoModal");
-  const grid = document.getElementById("videoGrid");
-
-  // Replace grid with this one video
-  grid.innerHTML = `
-    <div class="aspect-video rounded-xl shadow-lg overflow-hidden">
-      <video class="w-full h-full object-cover" controls autoplay>
-        <source src="${src}" type="video/mp4">
-      </video>
-    </div>
-  `;
-
-  stopAllVideos(); // stop other videos
-  modal.classList.remove("hidden");
-  document.body.style.overflow = "hidden";
-}
-
-// CLOSE MODAL
-function closeVideoModal() {
-  const modal = document.getElementById("videoModal");
-  const grid = document.getElementById("videoGrid");
-
-  stopAllVideos();   // stop YouTube + local videos
-  grid.innerHTML = originalVideoGridHTML;  // restore grid
-
-  modal.classList.add("hidden");
-  document.body.style.overflow = "auto";
-}
-
-// STOP ALL VIDEOS
-function stopAllVideos() {
-  // Stop HTML5 videos
-  document.querySelectorAll("#videoGrid video").forEach(v => v.pause());
-
-  // Stop YouTube iframes
-  document.querySelectorAll("#videoGrid iframe").forEach(ifr => {
-    ifr.src = ifr.src;
-  });
-}
-</script>
-
-
 <!-- 🌿 Contact Form Modal -->
 <div id="emailModal" 
      class="fixed inset-0 hidden z-[70] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
@@ -2159,6 +2093,7 @@ function stopAllVideos() {
 
 </body>
 </html>
+
 
 
 
