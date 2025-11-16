@@ -1356,7 +1356,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ✅ Setup Video modal (with autoplay stop on close)
   setupModal("viewMoreVideos", "singleVideoModal", "closeVideoModal", () => {
-    const videoModal = document.getElementById("videoModal");
+    const videoModal = document.getElementById("singleVideoModal");
     if (videoModal) {
       const iframes = videoModal.querySelectorAll("iframe");
       iframes.forEach((iframe) => (iframe.src = iframe.src)); // stop playback
@@ -2114,6 +2114,7 @@ function openVideoModal(videoSrc) {
 
 </body>
 </html>
+
 
 
 
