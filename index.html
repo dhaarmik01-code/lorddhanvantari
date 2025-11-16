@@ -2043,19 +2043,33 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
 
-  <script>
-
-    // Save original video modal content
+<script>
+// Save original video grid
 let originalVideoGridHTML = "";
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.getElementById("videoGrid");
   originalVideoGridHTML = grid.innerHTML;
+
+  // Attach close button
+  document.getElementById("closeVideoModal").addEventListener("click", closeVideoModal);
+
+  // Close when clicking outside
+  document.getElementById("videoModal").addEventListener("click", (e) => {
+    if (e.target.id === "videoModal") closeVideoModal();
+  });
+
+  // ESC key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeVideoModal();
+  });
 });
+
+// OPEN SINGLE VIDEO
 function openVideoModal(src) {
   const modal = document.getElementById("videoModal");
   const grid = document.getElementById("videoGrid");
 
-  // Show only the selected video
+  // Replace grid with this one video
   grid.innerHTML = `
     <div class="aspect-video rounded-xl shadow-lg overflow-hidden">
       <video class="w-full h-full object-cover" controls autoplay>
@@ -2064,51 +2078,34 @@ function openVideoModal(src) {
     </div>
   `;
 
-  // Ensure modal opens
+  stopAllVideos(); // stop other videos
   modal.classList.remove("hidden");
   document.body.style.overflow = "hidden";
 }
 
-function closeVideoModalFunction() {
+// CLOSE MODAL
+function closeVideoModal() {
   const modal = document.getElementById("videoModal");
   const grid = document.getElementById("videoGrid");
 
-  // Stop any video
-  grid.querySelectorAll("video").forEach(v => v.pause());
-
-  // Restore original video grid
-  grid.innerHTML = originalVideoGridHTML;
+  stopAllVideos();   // stop YouTube + local videos
+  grid.innerHTML = originalVideoGridHTML;  // restore grid
 
   modal.classList.add("hidden");
   document.body.style.overflow = "auto";
 }
 
+// STOP ALL VIDEOS
+function stopAllVideos() {
+  // Stop HTML5 videos
+  document.querySelectorAll("#videoGrid video").forEach(v => v.pause());
 
-</script>
-
-  <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.getElementById("videoModal");
-  const closeBtn = document.getElementById("closeVideoModal");
-
-  // Close button
-  closeBtn.addEventListener("click", closeVideoModalFunction);
-
-  // Click outside modal to close
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) closeVideoModalFunction();
+  // Stop YouTube iframes
+  document.querySelectorAll("#videoGrid iframe").forEach(ifr => {
+    ifr.src = ifr.src;
   });
-
-  // ESC key closes modal
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-      closeVideoModalFunction();
-    }
-  });
-});
+}
 </script>
-
-
 
 
 <!-- 🌿 Contact Form Modal -->
@@ -2162,6 +2159,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
+
 
 
 
