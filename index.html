@@ -2042,6 +2042,29 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+  <script>
+function openVideoModal(videoSrc) {
+  const modal = document.getElementById("videoModal");
+  const videoGrid = document.getElementById("videoGrid");
+
+  // Stop all previous videos
+  document.querySelectorAll("#videoGrid video").forEach(v => v.pause());
+
+  // Replace with only the selected video
+  videoGrid.innerHTML = `
+    <div class="aspect-video rounded-xl shadow-lg overflow-hidden">
+      <video class="w-full h-full object-cover" controls autoplay>
+        <source src="${videoSrc}" type="video/mp4">
+      </video>
+    </div>
+  `;
+
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+}
+</script>
+
+
 <!-- 🌿 Contact Form Modal -->
 <div id="emailModal" 
      class="fixed inset-0 hidden z-[70] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
@@ -2093,6 +2116,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
+
 
 
 
