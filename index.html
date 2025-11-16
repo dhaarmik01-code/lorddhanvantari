@@ -2044,14 +2044,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   <script>
-// -------------------------------
-// 🎥 OPEN CUSTOM VIDEO MODAL
-// -------------------------------
+
+    // Save original video modal content
+let originalVideoGridHTML = "";
+document.addEventListener("DOMContentLoaded", () => {
+  const grid = document.getElementById("videoGrid");
+  originalVideoGridHTML = grid.innerHTML;
+});
 function openVideoModal(src) {
   const modal = document.getElementById("videoModal");
   const grid = document.getElementById("videoGrid");
 
-  // Replace video grid content with ONLY the clicked video
+  // Show only the selected video
   grid.innerHTML = `
     <div class="aspect-video rounded-xl shadow-lg overflow-hidden">
       <video class="w-full h-full object-cover" controls autoplay>
@@ -2060,41 +2064,42 @@ function openVideoModal(src) {
     </div>
   `;
 
-  // Show modal
+  // Ensure modal opens
   modal.classList.remove("hidden");
   document.body.style.overflow = "hidden";
 }
 
-// -------------------------------
-// 🎥 CLOSE VIDEO MODAL
-// -------------------------------
 function closeVideoModalFunction() {
   const modal = document.getElementById("videoModal");
+  const grid = document.getElementById("videoGrid");
 
-  // Stop all videos
-  document.querySelectorAll("#videoGrid video").forEach(v => v.pause());
+  // Stop any video
+  grid.querySelectorAll("video").forEach(v => v.pause());
+
+  // Restore original video grid
+  grid.innerHTML = originalVideoGridHTML;
 
   modal.classList.add("hidden");
   document.body.style.overflow = "auto";
 }
 
-// -------------------------------
-// 🎥 HOOK CLOSE BUTTON + BACKDROP
-// -------------------------------
+
+</script>
+
+  <script>
 document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("videoModal");
   const closeBtn = document.getElementById("closeVideoModal");
 
-  if (closeBtn) {
-    closeBtn.addEventListener("click", closeVideoModalFunction);
-  }
+  // Close button
+  closeBtn.addEventListener("click", closeVideoModalFunction);
 
-  // Close when clicking outside modal panel
+  // Click outside modal to close
   modal.addEventListener("click", (e) => {
     if (e.target === modal) closeVideoModalFunction();
   });
 
-  // Close on ESC
+  // ESC key closes modal
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && !modal.classList.contains("hidden")) {
       closeVideoModalFunction();
@@ -2102,6 +2107,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+
 
 
 
@@ -2156,6 +2162,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
+
 
 
 
