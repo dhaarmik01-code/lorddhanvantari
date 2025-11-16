@@ -1355,7 +1355,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupModal("viewMoreFestivals", "festivalModal", "closeFestivalModal");
 
   // ✅ Setup Video modal (with autoplay stop on close)
-  setupModal("viewMoreVideos", "videoModal", "closeVideoModal", () => {
+  setupModal("viewMoreVideos", "singleVideoModal", "closeVideoModal", () => {
     const videoModal = document.getElementById("videoModal");
     if (videoModal) {
       const iframes = videoModal.querySelectorAll("iframe");
@@ -1485,8 +1485,9 @@ function stopAllVideos() {
 
 // Stop videos when modal closes
 document.addEventListener('DOMContentLoaded', () => {
-  const closeBtn = document.getElementById('closeVideoModal');
-  const modal = document.getElementById('videoModal');
+const closeBtn = document.getElementById('closeVideoModal');
+const modal = document.getElementById('singleVideoModal');
+
   if (closeBtn && modal) {
     closeBtn.addEventListener('click', () => {
       stopAllVideos();
@@ -2113,6 +2114,7 @@ function openVideoModal(videoSrc) {
 
 </body>
 </html>
+
 
 
 
