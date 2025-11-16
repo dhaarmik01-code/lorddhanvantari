@@ -2043,6 +2043,67 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
 
+  <script>
+// -------------------------------
+// 🎥 OPEN CUSTOM VIDEO MODAL
+// -------------------------------
+function openVideoModal(src) {
+  const modal = document.getElementById("videoModal");
+  const grid = document.getElementById("videoGrid");
+
+  // Replace video grid content with ONLY the clicked video
+  grid.innerHTML = `
+    <div class="aspect-video rounded-xl shadow-lg overflow-hidden">
+      <video class="w-full h-full object-cover" controls autoplay>
+        <source src="${src}" type="video/mp4">
+      </video>
+    </div>
+  `;
+
+  // Show modal
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+}
+
+// -------------------------------
+// 🎥 CLOSE VIDEO MODAL
+// -------------------------------
+function closeVideoModalFunction() {
+  const modal = document.getElementById("videoModal");
+
+  // Stop all videos
+  document.querySelectorAll("#videoGrid video").forEach(v => v.pause());
+
+  modal.classList.add("hidden");
+  document.body.style.overflow = "auto";
+}
+
+// -------------------------------
+// 🎥 HOOK CLOSE BUTTON + BACKDROP
+// -------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("videoModal");
+  const closeBtn = document.getElementById("closeVideoModal");
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeVideoModalFunction);
+  }
+
+  // Close when clicking outside modal panel
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeVideoModalFunction();
+  });
+
+  // Close on ESC
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+      closeVideoModalFunction();
+    }
+  });
+});
+</script>
+
+
 
 <!-- 🌿 Contact Form Modal -->
 <div id="emailModal" 
@@ -2095,6 +2156,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
+
 
 
 
