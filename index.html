@@ -901,7 +901,7 @@
 </div>
 
 <!-- Videos Modal -->
-<div id="videoModal" class="fixed inset-0 hidden z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+<div id="singleVideoModal" class="fixed inset-0 hidden z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
   <div class="relative bg-white rounded-3xl shadow-2xl max-w-6xl w-full p-6 overflow-y-auto max-h-[90vh]">
     
     <!-- Header -->
@@ -2042,15 +2042,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
-  <script>
+<script>
 function openVideoModal(videoSrc) {
-  const modal = document.getElementById("videoModal");
+  const modal = document.getElementById("singleVideoModal");
   const videoGrid = document.getElementById("videoGrid");
 
-  // Stop all previous videos
-  document.querySelectorAll("#videoGrid video").forEach(v => v.pause());
-
-  // Replace with only the selected video
   videoGrid.innerHTML = `
     <div class="aspect-video rounded-xl shadow-lg overflow-hidden">
       <video class="w-full h-full object-cover" controls autoplay>
@@ -2063,6 +2059,7 @@ function openVideoModal(videoSrc) {
   document.body.style.overflow = "hidden";
 }
 </script>
+
 
 
 <!-- 🌿 Contact Form Modal -->
@@ -2116,6 +2113,7 @@ function openVideoModal(videoSrc) {
 
 </body>
 </html>
+
 
 
 
