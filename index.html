@@ -1,166 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Lord Shree Dhanvantari Temple – Hootkala • Marukeri • Bhatkal • Karnataka 581320</title>
-<meta name="description" content="Official website of Lord Shree Dhanvantari Temple – Hootkala, Marukeri, Bhatkal, Karnataka 581320. A serene spiritual center for health, healing and Ayurveda." />
-<meta name="keywords" content="Dhanvantari Temple, Ayurveda, Healing, Bhatkal, Karnataka, Lord Dhanvantari" />
-<link rel="icon" href="images/lord.png" type="image/png">
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lord Shree Dhanvantari Temple – Hootkala • Marukeri • Bhatkal • Karnataka 581320</title>
+  <meta name="description" content="Official website of Lord Shree Dhanvantari Temple – Hootkala, Marukeri, Bhatkal, Karnataka 581320. A serene spiritual center for health, healing and Ayurveda." />
+  <meta name="keywords" content="Dhanvantari Temple, Ayurveda, Healing, Bhatkal, Karnataka, Lord Dhanvantari" />
+  <link rel="icon" href="images/lord.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<style>
-
-
-@keyframes shimmer {
-0% { transform: translateX(-100%); }
-100% { transform: translateX(100%); }
+  <style>
+    
+    
+    @keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
-/* ===== CORE STYLES ===== */
-.glass { background: rgba(255,255,255,0.7); backdrop-filter: blur(6px); }
-.accent-grad { background: linear-gradient(90deg,#c99b63,#d7b68a); }
-body { background: #fffaf3; }
+    /* ===== CORE STYLES ===== */
+    .glass { background: rgba(255,255,255,0.7); backdrop-filter: blur(6px); }
+    .accent-grad { background: linear-gradient(90deg,#c99b63,#d7b68a); }
+    body { background: #fffaf3; }
 
-/* ===== EVENT STICKER ===== */
-.event-sticker {
-position: relative;
-display: flex;
-align-items: center;
-justify-content: center;
-width: 90px;
-height: 90px;
-border-radius: 50%;
-background: radial-gradient(circle at center, #fff8d6 15%, #f5cc7b 80%);
-color: #7a4b00;
-font-weight: bold;
-text-align: center;
-font-size: 0.75rem;
-box-shadow: 0 0 25px rgba(255,200,100,0.55);
-border: 3px solid #f5d27a;
-cursor: pointer;
-animation: slowSpin 12s linear infinite, eventGlow 4s ease-in-out infinite;
-transition: transform 0.4s ease;
-}
-.event-sticker:hover { transform: scale(1.1); }
-.event-sticker span { display:block; line-height:1.2; }
+    /* ===== EVENT STICKER ===== */
+    .event-sticker {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: radial-gradient(circle at center, #fff8d6 15%, #f5cc7b 80%);
+      color: #7a4b00;
+      font-weight: bold;
+      text-align: center;
+      font-size: 0.75rem;
+      box-shadow: 0 0 25px rgba(255,200,100,0.55);
+      border: 3px solid #f5d27a;
+      cursor: pointer;
+      animation: slowSpin 12s linear infinite, eventGlow 4s ease-in-out infinite;
+      transition: transform 0.4s ease;
+    }
+    .event-sticker:hover { transform: scale(1.1); }
+    .event-sticker span { display:block; line-height:1.2; }
 
-@keyframes eventGlow {
-0%,100% { box-shadow:0 0 20px rgba(201,155,99,.4),0 0 40px rgba(215,182,138,.2);}
-50% { box-shadow:0 0 30px rgba(201,155,99,.7),0 0 60px rgba(215,182,138,.35);}
-}
-@keyframes slowSpin {0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+    @keyframes eventGlow {
+      0%,100% { box-shadow:0 0 20px rgba(201,155,99,.4),0 0 40px rgba(215,182,138,.2);}
+      50% { box-shadow:0 0 30px rgba(201,155,99,.7),0 0 60px rgba(215,182,138,.35);}
+    }
+    @keyframes slowSpin {0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
 
 
-/* ===== HORIZONTAL SCROLL GALLERIES ===== */
-.scroll-container {
-display: flex;
-overflow-x: auto;
-scroll-behavior: smooth;
-gap: 1rem;
-scroll-snap-type: x mandatory;
-}
-.scroll-container::-webkit-scrollbar { display: none; }
-.scroll-item { flex: 0 0 100%; scroll-snap-align: center; border-radius: 0.75rem; overflow: hidden; }
-.dot { width:8px;height:8px;border-radius:50%;background-color:#d1d5db;transition:background-color .3s; }
-.dot.active { background-color:#c99b63; }
+    /* ===== HORIZONTAL SCROLL GALLERIES ===== */
+    .scroll-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+    .scroll-container::-webkit-scrollbar { display: none; }
+    .scroll-item { flex: 0 0 100%; scroll-snap-align: center; border-radius: 0.75rem; overflow: hidden; }
+    .dot { width:8px;height:8px;border-radius:50%;background-color:#d1d5db;transition:background-color .3s; }
+    .dot.active { background-color:#c99b63; }
 
-/* ===== IMAGES ===== */
-img { background-color: transparent; }
-footer img, .scroll-item img { mix-blend-mode: multiply; }
+    /* ===== IMAGES ===== */
+    img { background-color: transparent; }
+    footer img, .scroll-item img { mix-blend-mode: multiply; }
 
-/* ===== ANIMATIONS ===== */
-@keyframes fadeIn { from {opacity:0;transform:scale(.97);} to {opacity:1;transform:scale(1);} }
-.animate-fadeIn { animation: fadeIn 1.5s ease; }
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeIn { from {opacity:0;transform:scale(.97);} to {opacity:1;transform:scale(1);} }
+    .animate-fadeIn { animation: fadeIn 1.5s ease; }
 
-@keyframes pulseGlow {
-0%,100% {opacity:.85;transform:scale(1);}
-50% {opacity:1;transform:scale(1.05);}
-}
-.animate-pulse-slow { animation:pulseGlow 3.5s ease-in-out infinite; }
+    @keyframes pulseGlow {
+      0%,100% {opacity:.85;transform:scale(1);}
+      50% {opacity:1;transform:scale(1.05);}
+    }
+    .animate-pulse-slow { animation:pulseGlow 3.5s ease-in-out infinite; }
 
-@keyframes slowSpin {0%{transform:rotate(0deg);}100%{transform:rotate(360deg);} }
-.animate-slowSpin { animation:slowSpin 60s linear infinite; }
+    @keyframes slowSpin {0%{transform:rotate(0deg);}100%{transform:rotate(360deg);} }
+    .animate-slowSpin { animation:slowSpin 60s linear infinite; }
 
-@keyframes eventGlow {
-0%,100% { box-shadow:0 0 20px rgba(201,155,99,.4),0 0 40px rgba(215,182,138,.2); }
-50% { box-shadow:0 0 30px rgba(201,155,99,.6),0 0 60px rgba(215,182,138,.35); }
-}
-.animate-eventGlow { animation:eventGlow 4s ease-in-out infinite; }
+    @keyframes eventGlow {
+      0%,100% { box-shadow:0 0 20px rgba(201,155,99,.4),0 0 40px rgba(215,182,138,.2); }
+      50% { box-shadow:0 0 30px rgba(201,155,99,.6),0 0 60px rgba(215,182,138,.35); }
+    }
+    .animate-eventGlow { animation:eventGlow 4s ease-in-out infinite; }
 
-@keyframes shimmer {0%{background-position:0% 50%;}100%{background-position:100% 50%;}}
-.animate-shimmer { background-size:200% 200%;animation:shimmer 3s linear infinite; }
+    @keyframes shimmer {0%{background-position:0% 50%;}100%{background-position:100% 50%;}}
+    .animate-shimmer { background-size:200% 200%;animation:shimmer 3s linear infinite; }
 
-/* ===== OVERLAY ===== */
-#welcomeOverlay { opacity:1;transition:opacity 2s ease; }
-#welcomeOverlay.hidden { opacity:0;pointer-events:none; }
-.aura-glow {
-position:relative;z-index:10;
-box-shadow:0 0 25px 6px rgba(255,200,120,.4),
-0 0 40px 12px rgba(255,225,150,.25);
-}
+    /* ===== OVERLAY ===== */
+    #welcomeOverlay { opacity:1;transition:opacity 2s ease; }
+    #welcomeOverlay.hidden { opacity:0;pointer-events:none; }
+    .aura-glow {
+      position:relative;z-index:10;
+      box-shadow:0 0 25px 6px rgba(255,200,120,.4),
+                 0 0 40px 12px rgba(255,225,150,.25);
+    }
 
-/* ===== COUNTDOWN ===== */
-#vardhantuCounter { letter-spacing:.05em;
-background:linear-gradient(to right,#fff7e6,#fff2cc); }
+    /* ===== COUNTDOWN ===== */
+    #vardhantuCounter { letter-spacing:.05em;
+      background:linear-gradient(to right,#fff7e6,#fff2cc); }
 
-@keyframes fadeIn {
-from { opacity: 0; transform: scale(0.97); }
-to { opacity: 1; transform: scale(1); }
+      @keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
 }
 .animate-fadeIn {
-animation: fadeIn 1.5s ease forwards;
+  animation: fadeIn 1.5s ease forwards;
 }
 @keyframes pulseGlow {
-0%,100% { opacity: 0.85; transform: scale(1); }
-50% { opacity: 1; transform: scale(1.05); }
+  0%,100% { opacity: 0.85; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
 }
 .animate-pulse-slow {
-animation: pulseGlow 3.5s ease-in-out infinite;
+  animation: pulseGlow 3.5s ease-in-out infinite;
 }
 @keyframes slowSpin {
-0% { transform: rotate(0deg); }
-100% { transform: rotate(360deg); }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 .animate-slowSpin {
-animation: slowSpin 80s linear infinite;
+  animation: slowSpin 80s linear infinite;
 }
 @keyframes shimmer {
-0% { background-position: 0% 50%; }
-100% { background-position: 100% 50%; }
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 .animate-shimmer {
-background-size: 200% 200%;
-animation: shimmer 3s linear infinite;
+  background-size: 200% 200%;
+  animation: shimmer 3s linear infinite;
 }
 /* Smooth fade-out transition */
 #welcomeOverlay.fade-out {
-opacity: 0;
-transition: opacity 3s ease-in-out;
-pointer-events: none;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+  pointer-events: none;
 }
 
 #eventText {
-transition: opacity 0.6s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
 }
 .animate-pulse-slow {
-animation: pulseGlow 3.5s ease-in-out infinite;
+  animation: pulseGlow 3.5s ease-in-out infinite;
 }
 @keyframes pulseGlow {
-0%,100% {opacity: 0.95; transform: scale(1);}
-50% {opacity: 1; transform: scale(1.02);}
+  0%,100% {opacity: 0.95; transform: scale(1);}
+  50% {opacity: 1; transform: scale(1.02);}
 }
 
 #eventDots div.bg-amber-600 {
-box-shadow: 0 0 6px 2px rgba(217, 169, 64, 0.6);
+  box-shadow: 0 0 6px 2px rgba(217, 169, 64, 0.6);
 }
 
 @keyframes shimmer {
-0% { background-position: -200% 0; }
-100% { background-position: 200% 0; }
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
-</style>
+  </style>
 </head>
 
 <body class="text-slate-800 antialiased">
@@ -170,259 +170,259 @@ box-shadow: 0 0 6px 2px rgba(217, 169, 64, 0.6);
 
 <!-- ===== HEADER ===== -->
 <header class="sticky top-0 z-40 bg-white/70 backdrop-blur border-b border-amber-100">
-<div class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3">
+  <div class="max-w-5xl mx-auto flex items-center justify-between px-4 py-3">
+    
+    <!-- 🔱 Logo + Title -->
+    <div class="flex items-center gap-3">
+      <div class="w-12 h-12 rounded-lg overflow-hidden shadow">
+        <img src="images/lord.png" alt="Temple logo" class="w-full h-full object-cover" />
+      </div>
 
-<!-- 🔱 Logo + Title -->
-<div class="flex items-center gap-3">
-<div class="w-12 h-12 rounded-lg overflow-hidden shadow">
-<img src="images/lord.png" alt="Temple logo" class="w-full h-full object-cover" />
-</div>
+      <div class="leading-tight text-center">
+        <h1 class="text-lg md:text-xl font-extrabold text-amber-800 tracking-wide">
+          🪷 Shree Dhanvantari 🪷
+        </h1>
+        <p class="text-sm md:text-base text-amber-700 font-semibold italic tracking-wide font-[Poppins]">
+          Healing • Ayurveda • Divine Blessings
+        </p>
+      </div>
+    </div>
 
-<div class="leading-tight text-center">
-<h1 class="text-lg md:text-xl font-extrabold text-amber-800 tracking-wide">
-🪷 Shree Dhanvantari 🪷
-</h1>
-<p class="text-sm md:text-base text-amber-700 font-semibold italic tracking-wide font-[Poppins]">
-Healing • Ayurveda • Divine Blessings
-</p>
-</div>
-</div>
+    <!-- 🌿 Desktop Navigation -->
+    <nav id="nav" role="navigation" class="hidden md:flex gap-5 font-medium">
+      <a href="#about" class="hover:text-amber-600">Home</a>
+      <a href="#seva" class="hover:text-amber-600">Seva</a>
+      <a href="#events" class="hover:text-amber-600">Events</a>
+      <a href="#gallery" class="hover:text-amber-600">Photo Gallery</a>
+      <a href="#festivals" class="hover:text-amber-600">Festivals</a>
+      <a href="#videos" class="hover:text-amber-600">Videos</a>
+      <a href="#donate" class="hover:text-amber-600">Donate</a>
+      <a href="#visit" class="hover:text-amber-600">Contact</a>
+    </nav>
 
-<!-- 🌿 Desktop Navigation -->
-<nav id="nav" role="navigation" class="hidden md:flex gap-5 font-medium">
-<a href="#about" class="hover:text-amber-600">Home</a>
-<a href="#seva" class="hover:text-amber-600">Seva</a>
-<a href="#events" class="hover:text-amber-600">Events</a>
-<a href="#gallery" class="hover:text-amber-600">Photo Gallery</a>
-<a href="#festivals" class="hover:text-amber-600">Festivals</a>
-<a href="#videos" class="hover:text-amber-600">Videos</a>
-<a href="#donate" class="hover:text-amber-600">Donate</a>
-<a href="#visit" class="hover:text-amber-600">Contact</a>
-</nav>
+    <!-- 🍃 Mobile Menu Button -->
+    <button id="menuBtn" aria-label="Open menu"
+      class="md:hidden flex flex-col justify-center items-center w-11 h-11 rounded-full 
+             bg-gradient-to-br from-amber-200 via-amber-100 to-amber-300 shadow-md 
+             border border-amber-200 hover:shadow-lg hover:scale-105 transition">
+      <span class="block w-5 h-0.5 bg-amber-800 mb-1 rounded-full"></span>
+      <span class="block w-5 h-0.5 bg-amber-800 mb-1 rounded-full"></span>
+      <span class="block w-5 h-0.5 bg-amber-800 rounded-full"></span>
+    </button>
+  </div>
 
-<!-- 🍃 Mobile Menu Button -->
-<button id="menuBtn" aria-label="Open menu"
-class="md:hidden flex flex-col justify-center items-center w-11 h-11 rounded-full 
-            bg-gradient-to-br from-amber-200 via-amber-100 to-amber-300 shadow-md 
-            border border-amber-200 hover:shadow-lg hover:scale-105 transition">
-<span class="block w-5 h-0.5 bg-amber-800 mb-1 rounded-full"></span>
-<span class="block w-5 h-0.5 bg-amber-800 mb-1 rounded-full"></span>
-<span class="block w-5 h-0.5 bg-amber-800 rounded-full"></span>
-</button>
-</div>
-
-<!-- 📱 Mobile Navigation -->
-<div id="mobileMenu" class="md:hidden hidden border-t border-amber-100 bg-white/90 backdrop-blur absolute w-full z-30">
-<div class="px-4 py-3 flex flex-col gap-2 text-amber-800">
-<a href="#about" class="py-2 px-3 hover:bg-amber-50 rounded-md">Home</a>
-<a href="#seva" class="py-2 px-3 hover:bg-amber-50 rounded-md">Seva</a>
-<a href="#events" class="py-2 px-3 hover:bg-amber-50 rounded-md">Events</a>
-<a href="#gallery" class="py-2 px-3 hover:bg-amber-50 rounded-md">Photo Gallery</a>
-<a href="#festivals" class="py-2 px-3 hover:bg-amber-50 rounded-md">Festivals</a>
-<a href="#videos" class="py-2 px-3 hover:bg-amber-50 rounded-md">Videos</a>
-<a href="#donate" class="py-2 px-3 hover:bg-amber-50 rounded-md">Donate</a>
-<a href="#visit" class="py-2 px-3 hover:bg-amber-50 rounded-md">Contact</a>
-</div>
-</div>
+  <!-- 📱 Mobile Navigation -->
+  <div id="mobileMenu" class="md:hidden hidden border-t border-amber-100 bg-white/90 backdrop-blur absolute w-full z-30">
+    <div class="px-4 py-3 flex flex-col gap-2 text-amber-800">
+      <a href="#about" class="py-2 px-3 hover:bg-amber-50 rounded-md">Home</a>
+      <a href="#seva" class="py-2 px-3 hover:bg-amber-50 rounded-md">Seva</a>
+      <a href="#events" class="py-2 px-3 hover:bg-amber-50 rounded-md">Events</a>
+      <a href="#gallery" class="py-2 px-3 hover:bg-amber-50 rounded-md">Photo Gallery</a>
+      <a href="#festivals" class="py-2 px-3 hover:bg-amber-50 rounded-md">Festivals</a>
+      <a href="#videos" class="py-2 px-3 hover:bg-amber-50 rounded-md">Videos</a>
+      <a href="#donate" class="py-2 px-3 hover:bg-amber-50 rounded-md">Donate</a>
+      <a href="#visit" class="py-2 px-3 hover:bg-amber-50 rounded-md">Contact</a>
+    </div>
+  </div>
 </header>
 
 
 <!-- 🌺 DIVINE HERO SECTION -->
 <section id="hero"
-class="relative overflow-hidden bg-cover bg-center min-h-[92vh] flex items-center justify-center"
-style="background-image:url('images/bg-temple-light.jpg');">
+         class="relative overflow-hidden bg-cover bg-center min-h-[92vh] flex items-center justify-center"
+         style="background-image:url('images/bg-temple-light.jpg');">
 
 <!-- 🪷 Top-Centered Upcoming Event Banner -->
 <div class="absolute top-4 left-1/2 transform -translate-x-1/2 z-30 text-center">
-<div id="eventBanner"
-class="relative w-[22rem] md:w-[34rem] px-5 py-1.5 rounded-xl
-             bg-gradient-to-r from-[#7b2e1f] via-[#a94427] to-[#d88b4a]
-             border border-[#f6d365] shadow-md backdrop-blur-sm
-             transition-opacity duration-700 ease-in-out opacity-100 overflow-hidden animate-pulse-slow">
+  <div id="eventBanner"
+       class="relative w-[22rem] md:w-[34rem] px-5 py-1.5 rounded-xl
+              bg-gradient-to-r from-[#7b2e1f] via-[#a94427] to-[#d88b4a]
+              border border-[#f6d365] shadow-md backdrop-blur-sm
+              transition-opacity duration-700 ease-in-out opacity-100 overflow-hidden animate-pulse-slow">
 
-<!-- Text -->
-<p id="eventText"
-class="text-[#fff8e1] font-semibold text-sm md:text-base leading-tight drop-shadow-sm">
-🪷 <span class="font-bold text-yellow-200">ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮ:</span> ಕಾರ್ತಿಕ ದೀಪೋತ್ಸವ — ನವೆಂಬರ್ 20, 2025 🪔
-</p>
-</div>
-</div>
-
-<!-- 🌞 Soft Divine Light Layers -->
-<div class="absolute inset-0">
-<div class="absolute inset-0 bg-gradient-to-b from-amber-100/70 via-white/60 to-yellow-50/90 animate-sunrise"></div>
-<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_50%,rgba(255,225,160,0.35)_100%)]"></div>
+    <!-- Text -->
+    <p id="eventText"
+       class="text-[#fff8e1] font-semibold text-sm md:text-base leading-tight drop-shadow-sm">
+      🪷 <span class="font-bold text-yellow-200">ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮ:</span> ಕಾರ್ತಿಕ ದೀಪೋತ್ಸವ — ನವೆಂಬರ್ 20, 2025 🪔
+    </p>
+  </div>
 </div>
 
-<!-- ✨ Rotating Aura Rays -->
-<div class="absolute inset-0 opacity-40">
-<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[180%] h-[180%]
-               bg-[radial-gradient(circle_at_center,rgba(255,240,180,0.45)_0%,transparent_70%)]
-               animate-rotateRays"></div>
-</div>
+  <!-- 🌞 Soft Divine Light Layers -->
+  <div class="absolute inset-0">
+    <div class="absolute inset-0 bg-gradient-to-b from-amber-100/70 via-white/60 to-yellow-50/90 animate-sunrise"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_50%,rgba(255,225,160,0.35)_100%)]"></div>
+  </div>
 
-<!-- 🌼 Floating Gold Dust -->
-<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/golden-dust.png')]
-             opacity-25 mix-blend-overlay animate-pulse-slow"></div>
+  <!-- ✨ Rotating Aura Rays -->
+  <div class="absolute inset-0 opacity-40">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[180%] h-[180%]
+                bg-[radial-gradient(circle_at_center,rgba(255,240,180,0.45)_0%,transparent_70%)]
+                animate-rotateRays"></div>
+  </div>
 
-<!-- 🪷 HERO CONTENT -->
-<div class="relative z-10 text-center max-w-4xl px-4">
-<!-- 🌿 Divine Image (Larger & Glowing) -->
-<div class="relative inline-block mb-12">
-<div class="absolute inset-0 bg-gradient-to-tr from-amber-300/60 via-yellow-100/40 to-transparent blur-3xl animate-pulse-slow rounded-full"></div>
-<img src="images/lord.png" alt="Lord Dhanvantari"
-class="relative w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full border-4 border-amber-100 shadow-2xl ring-8 ring-amber-300/50 aura-glow">
-</div>
+  <!-- 🌼 Floating Gold Dust -->
+  <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/golden-dust.png')]
+              opacity-25 mix-blend-overlay animate-pulse-slow"></div>
 
-<!-- Temple Title -->
+  <!-- 🪷 HERO CONTENT -->
+  <div class="relative z-10 text-center max-w-4xl px-4">
+    <!-- 🌿 Divine Image (Larger & Glowing) -->
+    <div class="relative inline-block mb-12">
+      <div class="absolute inset-0 bg-gradient-to-tr from-amber-300/60 via-yellow-100/40 to-transparent blur-3xl animate-pulse-slow rounded-full"></div>
+      <img src="images/lord.png" alt="Lord Dhanvantari"
+           class="relative w-64 h-64 md:w-80 md:h-80 mx-auto rounded-full border-4 border-amber-100 shadow-2xl ring-8 ring-amber-300/50 aura-glow">
+    </div>
+
+    <!-- Temple Title -->
 <h1 class="text-4xl md:text-6xl font-extrabold text-amber-900 drop-shadow-lg animate-fadeIn text-center leading-tight">
-ಶ್ರೀ ಧನ್ವಂತರಿ ದೇವಸ್ಥಾನ
-<span class="block mt-3 text-xl md:text-3xl font-semibold text-amber-800 tracking-wide">
-Lord Shree Dhanvantari Temple
-</span>
+  ಶ್ರೀ ಧನ್ವಂತರಿ ದೇವಸ್ಥಾನ
+  <span class="block mt-3 text-xl md:text-3xl font-semibold text-amber-800 tracking-wide">
+    Lord Shree Dhanvantari Temple
+  </span>
 </h1>
 
 
-<!-- Subtitle -->
-<p class="mt-5 text-lg md:text-xl text-amber-700 italic font-medium animate-fadeIn" style="animation-delay:0.4s;">
-The Abode of Divine Healing and Ayurveda
-</p>
+    <!-- Subtitle -->
+    <p class="mt-5 text-lg md:text-xl text-amber-700 italic font-medium animate-fadeIn" style="animation-delay:0.4s;">
+      The Abode of Divine Healing and Ayurveda
+    </p>
 
-<!-- Golden Divider -->
-<div class="mt-6 mx-auto w-40 h-0.5 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-400 rounded-full animate-shimmer"></div>
+    <!-- Golden Divider -->
+    <div class="mt-6 mx-auto w-40 h-0.5 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-400 rounded-full animate-shimmer"></div>
 
-<!-- Sanskrit Shloka -->
-<p class="mt-6 text-sm md:text-base text-slate-700 font-serif italic leading-relaxed animate-fadeIn" style="animation-delay:0.8s;">
-“ॐ नमो भगवते धन्वंतरये अमृतकलश हस्ताय सर्वामय विनाशनाय<br>
-त्रैलोक्यनाथाय श्री महाविष्णवे नमः॥”
-</p>
-</div>
+    <!-- Sanskrit Shloka -->
+    <p class="mt-6 text-sm md:text-base text-slate-700 font-serif italic leading-relaxed animate-fadeIn" style="animation-delay:0.8s;">
+      “ॐ नमो भगवते धन्वंतरये अमृतकलश हस्ताय सर्वामय विनाशनाय<br>
+      त्रैलोक्यनाथाय श्री महाविष्णवे नमः॥”
+    </p>
+  </div>
 
-<!-- ✨ Floating Particles -->
-<div class="absolute inset-0 pointer-events-none overflow-hidden">
-<div class="absolute w-full h-full bg-[radial-gradient(circle,rgba(255,235,190,0.18)_1px,transparent_1px)]
-               bg-[length:100px_100px] animate-particleFlow"></div>
-</div>
+  <!-- ✨ Floating Particles -->
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <div class="absolute w-full h-full bg-[radial-gradient(circle,rgba(255,235,190,0.18)_1px,transparent_1px)]
+                bg-[length:100px_100px] animate-particleFlow"></div>
+  </div>
 </section>
 <!-- ===== MAIN ===== -->
 <main class="max-w-5xl mx-auto px-4 py-8 grid gap-6 md:grid-cols-3 md:auto-rows-min">
-<section class="md:col-span-2 space-y-6">
+  <section class="md:col-span-2 space-y-6">
 
-<!-- === ABOUT SECTION (Improved) === -->
+   <!-- === ABOUT SECTION (Improved) === -->
 <!-- 🌸 ABOUT SECTION -->
 <article id="about" 
-class="bg-gradient-to-br from-amber-50 via-yellow-50 to-white 
-        rounded-3xl p-8 shadow-lg border border-amber-100 animate-fadeIn">
+  class="bg-gradient-to-br from-amber-50 via-yellow-50 to-white 
+         rounded-3xl p-8 shadow-lg border border-amber-100 animate-fadeIn">
 
-<!-- 🌼 Section Heading -->
-<div class="text-center mb-10">
-<h2 class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-500 
-              bg-clip-text text-transparent drop-shadow-md animate-fadeIn">
-About Lord Shree Dhanvantari
-</h2>
+  <!-- 🌼 Section Heading -->
+  <div class="text-center mb-10">
+    <h2 class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-500 
+               bg-clip-text text-transparent drop-shadow-md animate-fadeIn">
+   About Lord Shree Dhanvantari
+    </h2>
 
-<!-- ✨ Ornamental Divider -->
-<div class="mt-5 flex items-center justify-center gap-3">
-<span class="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
-<img src="images/lord.png" alt="divider icon" class="w-8 h-8 animate-pulse-slow opacity-90">
-<span class="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
-</div>
-</div>
+    <!-- ✨ Ornamental Divider -->
+    <div class="mt-5 flex items-center justify-center gap-3">
+      <span class="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
+      <img src="images/lord.png" alt="divider icon" class="w-8 h-8 animate-pulse-slow opacity-90">
+      <span class="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
+    </div>
+  </div>
 
-<!-- 🌿 About Content -->
-<div class="space-y-5 text-slate-700 leading-relaxed text-sm md:text-base">
-<p>
-Lord <b>Shree Dhanvantari</b>, the <b>Divine Physician</b> and <b>incarnation of Lord Vishnu</b>, 
-is revered as the <b>God of Ayurveda</b> — the eternal source of health, vitality, and divine healing. 
-Emerging from the cosmic ocean during the <em><b>Samudra Manthan</b></em>, He held the sacred 
-<b>pot of Amrita</b> — the nectar of immortality — symbolizing divine wellness and the end of disease.
-</p>
+  <!-- 🌿 About Content -->
+  <div class="space-y-5 text-slate-700 leading-relaxed text-sm md:text-base">
+    <p>
+      Lord <b>Shree Dhanvantari</b>, the <b>Divine Physician</b> and <b>incarnation of Lord Vishnu</b>, 
+      is revered as the <b>God of Ayurveda</b> — the eternal source of health, vitality, and divine healing. 
+      Emerging from the cosmic ocean during the <em><b>Samudra Manthan</b></em>, He held the sacred 
+      <b>pot of Amrita</b> — the nectar of immortality — symbolizing divine wellness and the end of disease.
+    </p>
 
-<p>
-Lord Dhanvantari’s blessings are invoked for <b>good health, longevity, and freedom from illness</b>. 
-His divine teachings form the spiritual foundation of <b>Ayurveda</b>, guiding humanity toward harmony 
-of <b>body, mind, and soul</b>.
-</p>
-</div>
+    <p>
+      Lord Dhanvantari’s blessings are invoked for <b>good health, longevity, and freedom from illness</b>. 
+      His divine teachings form the spiritual foundation of <b>Ayurveda</b>, guiding humanity toward harmony 
+      of <b>body, mind, and soul</b>.
+    </p>
+  </div>
 
-<!-- 🌿 Verses Section -->
-<div class="mt-8 grid md:grid-cols-2 gap-6">
-<!-- Verse 1 -->
-<div class="bg-white rounded-2xl border border-amber-100 shadow-sm p-5 text-center hover:shadow-md transition">
-<p class="font-serif font-bold text-base md:text-lg text-amber-900 leading-relaxed">
-ಶಂಖಂ ಚಕ್ರಮುಪರ್ಯಧಶ್ಚ ಕರಯೋಃ ದಿವ್ಯೌಷಧಂ ದಕ್ಷಿಣೇ।<br/>
-ವಾಮೇನಾನ್ಯಕರೇಣ ಸಂಭ್ರತ ಸುಧಾಕುಂಭಂ ಜ್ವಲತ್ಕಾಪಿಲಂ॥<br/>
-ಬಿಭ್ರಾಣಃ ಕರುಣಾಕರಃ ಶುಭಕರಃ ಸರ್ವಾಮಯಧ್ವಂಸಕಃ।<br/>
-ಸರ್ವಂ ಮೇ ದುರಿತಂ ಛಿನತ್ತು ಭಗವಾನ್ ಧನ್ವಂತರಿಃ ಸಂತತಂ॥
-</p>
-<p class="mt-3 text-xs text-slate-600 italic">
-“Holding the conch, discus, leech, and the pot of divine nectar, Lord Dhanvantari — embodiment of compassion and
-destroyer of all ailments — may He remove all our afflictions.”
-</p>
-</div>
+  <!-- 🌿 Verses Section -->
+  <div class="mt-8 grid md:grid-cols-2 gap-6">
+    <!-- Verse 1 -->
+    <div class="bg-white rounded-2xl border border-amber-100 shadow-sm p-5 text-center hover:shadow-md transition">
+      <p class="font-serif font-bold text-base md:text-lg text-amber-900 leading-relaxed">
+        ಶಂಖಂ ಚಕ್ರಮುಪರ್ಯಧಶ್ಚ ಕರಯೋಃ ದಿವ್ಯೌಷಧಂ ದಕ್ಷಿಣೇ।<br/>
+        ವಾಮೇನಾನ್ಯಕರೇಣ ಸಂಭ್ರತ ಸುಧಾಕುಂಭಂ ಜ್ವಲತ್ಕಾಪಿಲಂ॥<br/>
+        ಬಿಭ್ರಾಣಃ ಕರುಣಾಕರಃ ಶುಭಕರಃ ಸರ್ವಾಮಯಧ್ವಂಸಕಃ।<br/>
+        ಸರ್ವಂ ಮೇ ದುರಿತಂ ಛಿನತ್ತು ಭಗವಾನ್ ಧನ್ವಂತರಿಃ ಸಂತತಂ॥
+      </p>
+      <p class="mt-3 text-xs text-slate-600 italic">
+        “Holding the conch, discus, leech, and the pot of divine nectar, Lord Dhanvantari — embodiment of compassion and
+        destroyer of all ailments — may He remove all our afflictions.”
+      </p>
+    </div>
 
 <!-- Verse 2 with Clickable Image and Bilingual Chant Encouragement -->
 <div class="bg-white rounded-2xl border border-amber-100 shadow-sm p-5 text-center hover:shadow-md transition">
-<p class="font-serif font-bold text-base md:text-lg text-amber-900 leading-relaxed">
-ನಮಾಮಿ ಧನ್ವಂತರಿಮಾದಿದೇವಂ।<br/>
-ಸುರಾಸುರೈರ್ವಂದಿತಪಾದಪದ್ಮಮ್॥<br/>
-ಲೋಕೇ ಜರಾರುಗ್ಭಯ ಮೃತ್ಯುನಾಶಂ।<br/>
-ದಾತಾರಮೀಶಂ ವಿವಿದೌಷಧೀನಾಂ॥
-</p>
+  <p class="font-serif font-bold text-base md:text-lg text-amber-900 leading-relaxed">
+    ನಮಾಮಿ ಧನ್ವಂತರಿಮಾದಿದೇವಂ।<br/>
+    ಸುರಾಸುರೈರ್ವಂದಿತಪಾದಪದ್ಮಮ್॥<br/>
+    ಲೋಕೇ ಜರಾರುಗ್ಭಯ ಮೃತ್ಯುನಾಶಂ।<br/>
+    ದಾತಾರಮೀಶಂ ವಿವಿದೌಷಧೀನಾಂ॥
+  </p>
 
-<p class="mt-3 text-xs text-slate-600 italic">
-“I bow to Lord Dhanvantari, worshipped by gods and asuras alike — dispeller of disease, fear, and death, 
-the divine giver of medicinal herbs.”
-</p>
+  <p class="mt-3 text-xs text-slate-600 italic">
+    “I bow to Lord Dhanvantari, worshipped by gods and asuras alike — dispeller of disease, fear, and death, 
+    the divine giver of medicinal herbs.”
+  </p>
 
-<!-- 🌸 Chant Encouragement (Kannada + English, adjusted font sizes) -->
+  <!-- 🌸 Chant Encouragement (Kannada + English, adjusted font sizes) -->
 <div class="mt-4 bg-amber-50 rounded-xl px-4 py-3 inline-block shadow-sm">
-<p class="text-base md:text-lg font-semibold text-amber-800 mt-1">
-🌿 ಈ ಪವಿತ್ರ ಶ್ಲೋಕವನ್ನು ಪ್ರತಿದಿನ <span class="text-amber-900">8 ಬಾರಿ</span> ಪಠಿಸಿ 🌿
-</p>
-<p class="text-xs md:text-sm font-medium text-amber-700 mt-1">
-Chant this sacred verse <span class="text-amber-900 font-semibold">8 times daily</span>
-</p>
+  <p class="text-base md:text-lg font-semibold text-amber-800 mt-1">
+    🌿 ಈ ಪವಿತ್ರ ಶ್ಲೋಕವನ್ನು ಪ್ರತಿದಿನ <span class="text-amber-900">8 ಬಾರಿ</span> ಪಠಿಸಿ 🌿
+  </p>
+  <p class="text-xs md:text-sm font-medium text-amber-700 mt-1">
+    Chant this sacred verse <span class="text-amber-900 font-semibold">8 times daily</span>
+  </p>
 </div>
 
 
-<!-- 🌸 Verse Image Card -->
-<div class="mt-5">
-<img src="images/shloka/shloka.jpeg"
-alt="Dhanvantari Shloka"
-class="mx-auto w-full max-w-sm rounded-2xl border border-amber-100 shadow-md hover:shadow-lg hover:scale-[1.02] transition cursor-pointer"
-onclick="openVerseImageModal('images/shloka/shloka.jpeg')">
-<p class="mt-2 text-xs text-slate-500 italic">Click to enlarge</p>
-</div>
-</div>
-
-
-
-
+  <!-- 🌸 Verse Image Card -->
+  <div class="mt-5">
+    <img src="images/shloka/shloka.jpeg"
+         alt="Dhanvantari Shloka"
+         class="mx-auto w-full max-w-sm rounded-2xl border border-amber-100 shadow-md hover:shadow-lg hover:scale-[1.02] transition cursor-pointer"
+         onclick="openVerseImageModal('images/shloka/shloka.jpeg')">
+    <p class="mt-2 text-xs text-slate-500 italic">Click to enlarge</p>
+  </div>
 </div>
 
-<!-- 🌸 Learn More Button -->
-<div class="mt-10 text-center">
-<button id="openTempleModal"
-class="px-8 py-3 rounded-full bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400 
-            text-white font-semibold shadow-md hover:scale-105 transition">
-Know About the Temple
-</button>
-</div>
+
+
+
+  </div>
+
+  <!-- 🌸 Learn More Button -->
+  <div class="mt-10 text-center">
+    <button id="openTempleModal"
+      class="px-8 py-3 rounded-full bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400 
+             text-white font-semibold shadow-md hover:scale-105 transition">
+      Know About the Temple
+    </button>
+  </div>
 </article>
 
 <!-- 🌼 Verse Image Modal -->
 <div id="verseImageModal"
-class="fixed inset-0 hidden z-[70] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-<button onclick="closeVerseImageModal()"
-class="absolute top-6 right-6 px-4 py-2 bg-amber-50 text-amber-800 rounded-full font-semibold 
-                border border-amber-200 hover:bg-amber-100 shadow transition">
-✕ Close
-</button>
-<img id="verseImageModalImg"
-src=""
-alt="Verse Image Enlarged"
-class="max-h-[90vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-amber-200 transition-all duration-300">
+     class="fixed inset-0 hidden z-[70] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+  <button onclick="closeVerseImageModal()"
+          class="absolute top-6 right-6 px-4 py-2 bg-amber-50 text-amber-800 rounded-full font-semibold 
+                 border border-amber-200 hover:bg-amber-100 shadow transition">
+    ✕ Close
+  </button>
+  <img id="verseImageModalImg"
+       src=""
+       alt="Verse Image Enlarged"
+       class="max-h-[90vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-amber-200 transition-all duration-300">
 </div>
 
 
@@ -430,371 +430,378 @@ class="max-h-[90vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-amber-20
 
 <!-- 🌿 Know About the Temple Modal -->
 <div id="templeModal" 
-class="fixed inset-0 hidden z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
-<div class="relative bg-white rounded-3xl shadow-2xl max-w-4xl w-full p-8 overflow-y-auto max-h-[90vh] animate-fadeIn">
-<div class="flex justify-between items-center mb-6 border-b border-amber-100 pb-3">
-<h4 class="text-2xl md:text-3xl font-extrabold text-amber-800">
-🌿 Know About the Temple
-</h4>
-<button id="closeTempleModal"
-class="flex items-center gap-1 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-50 
-              border border-amber-200 text-amber-800 font-semibold text-sm shadow hover:scale-105 transition">
-✕ Close
-</button>
-</div>
+     class="fixed inset-0 hidden z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+  <div class="relative bg-white rounded-3xl shadow-2xl max-w-4xl w-full p-8 overflow-y-auto max-h-[90vh] animate-fadeIn">
+    <div class="flex justify-between items-center mb-6 border-b border-amber-100 pb-3">
+      <h4 class="text-2xl md:text-3xl font-extrabold text-amber-800">
+        🌿 Know About the Temple
+      </h4>
+      <button id="closeTempleModal"
+        class="flex items-center gap-1 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-50 
+               border border-amber-200 text-amber-800 font-semibold text-sm shadow hover:scale-105 transition">
+        ✕ Close
+      </button>
+    </div>
 
-<div class="space-y-5 text-slate-700 leading-relaxed text-base md:text-lg">
-<p>
-The <b>Lord Shree Dhanvantari Temple</b> in <b>Hootkala, Marukeri (Bhatkal)</b> stands as a beacon of
-divine healing and peace. It serves as a <b>spiritual and Ayurvedic healing center</b>, offering daily
-rituals, poojas, and community wellness programs inspired by <b>Ayurveda</b>.
-</p>
-<p>
-The temple atmosphere radiates serenity, faith, and holistic energy. Devotees visit to seek blessings
-for <b>health, long life, and mental well-being</b>. The presiding deity, Lord Dhanvantari, embodies the
-divine power of healing and eternal vitality.
-</p>
-<p>
-Regular events like <b>Vardhantyustava</b> and <b>Kartika Deepotsava</b> attract devotees from across
-the region, celebrating light, healing, and harmony.
-</p>
-<div class="mt-4 flex flex-wrap gap-3 justify-center">
-<span class="px-4 py-1.5 rounded-full bg-amber-100 text-amber-800 font-semibold text-sm shadow-sm">
-🌅 Daily Aarti — 7 AM & 7 PM
-</span>
-<span class="px-4 py-1.5 rounded-full bg-amber-100 text-amber-800 font-semibold text-sm shadow-sm">
-🕉️ Temple Hours — 6 AM to 9 PM
-</span>
+    <div class="space-y-5 text-slate-700 leading-relaxed text-base md:text-lg">
+      <p>
+        The <b>Lord Shree Dhanvantari Temple</b> in <b>Hootkala, Marukeri (Bhatkal)</b> stands as a beacon of
+        divine healing and peace. It serves as a <b>spiritual and Ayurvedic healing center</b>, offering daily
+        rituals, poojas, and community wellness programs inspired by <b>Ayurveda</b>.
+      </p>
+      <p>
+        The temple atmosphere radiates serenity, faith, and holistic energy. Devotees visit to seek blessings
+        for <b>health, long life, and mental well-being</b>. The presiding deity, Lord Dhanvantari, embodies the
+        divine power of healing and eternal vitality.
+      </p>
+      <p>
+        Regular events like <b>Vardhantyustava</b> and <b>Kartika Deepotsava</b> attract devotees from across
+        the region, celebrating light, healing, and harmony.
+      </p>
+      <div class="mt-4 flex flex-wrap gap-3 justify-center">
+        <span class="px-4 py-1.5 rounded-full bg-amber-100 text-amber-800 font-semibold text-sm shadow-sm">
+          🌅 Daily Aarti — 7 AM & 7 PM
+        </span>
+        <span class="px-4 py-1.5 rounded-full bg-amber-100 text-amber-800 font-semibold text-sm shadow-sm">
+          🕉️ Temple Hours — 6 AM to 9 PM
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-
+ 
 <!-- 🌿 SEVA DETAILS SECTION -->
 <article id="seva"
-class="bg-white rounded-3xl shadow-xl border border-amber-200 py-10 relative left-[50%] right-[50%] -mx-[50vw] w-screen overflow-hidden">
+  class="bg-white rounded-3xl shadow-xl border border-amber-200 py-10 relative left-[50%] right-[50%] -mx-[50vw] w-screen overflow-hidden">
 
-<!-- Header -->
-<h3 class="text-center text-amber-800 font-extrabold text-3xl mb-2">
-ಶ್ರೀ ಧನ್ವಂತರಿ ಕ್ಷೇತ್ರದ ಸೇವಾ ವಿವರಗಳು<br>
-<span class="block text-lg md:text-xl text-amber-700 font-semibold mt-1">
-Seva Offerings at Lord Shree Dhanvantari Temple
-</span>
-</h3>
+  <!-- Header -->
+  <h3 class="text-center text-amber-800 font-extrabold text-3xl mb-2">
+    ಶ್ರೀ ಧನ್ವಂತರಿ ಕ್ಷೇತ್ರದ ಸೇವಾ ವಿವರಗಳು<br>
+    <span class="block text-lg md:text-xl text-amber-700 font-semibold mt-1">
+      Seva Offerings at Lord Shree Dhanvantari Temple
+    </span>
+  </h3>
 
-<!-- Scrollable Seva Cards -->
-<div id="seva-scroll"
-class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth gap-6 px-6 pb-6 scrollbar-hide">
-
-<!-- 🌸 Seva Card 2 -->
-<div class="snap-center flex-shrink-0 w-screen md:w-[48%]
-               bg-gradient-to-br from-amber-50 via-yellow-50 to-white
-               border border-amber-200 rounded-3xl shadow-lg p-8 text-center 
-               relative overflow-hidden hover:shadow-amber-300/60 transition-all duration-500">
-
-<div class="absolute top-4 right-4 bg-white/80 text-amber-900 
-           text-sm font-bold tracking-wide rounded-xl px-3.5 py-1.5 
-           border border-amber-300 shadow-inner cursor-default select-none 
-           backdrop-blur-sm">
-₹ 1,500
-</div>
-
-<img src="images/lord.png" alt="Lord Dhanvantari" class="w-14 h-14 mx-auto mb-3 opacity-90">
-
-<h4 class="text-xl font-bold text-amber-800">ಕಲ್ಪೋಕ್ತ ಪೂಜೆ</h4>
-<p class="text-sm text-amber-700 font-semibold">One-day Kalpokta Pooja</p>
-
-<hr class="my-4 border-amber-200 w-1/3 mx-auto">
-
-<p class="text-sm text-slate-700 leading-relaxed">
-ಒಂದು ದಿನದ ಪೂರ್ಣ ವಿಧಿ ಪೂಜೆ – ಗಣಪತಿ ಪೂಜೆ, ಧನ್ವಂತರಿ ಅಭಿಷೇಕ, ನೈವೇದ್ಯ, ಅಲಂಕಾರ.<br>
-<span class="italic text-slate-600">
-Full-day traditional rituals including Ganapati Puja, Abhisheka, Naivedya & Alankara.
-</span>
-</p>
-
-<button onclick="openSevaModal('seva2', 1500)" 
-class="mt-5 inline-block px-5 py-2.5 rounded-full bg-gradient-to-r 
-              from-amber-500 via-yellow-500 to-amber-400 text-white font-semibold 
-              shadow-md hover:shadow-amber-300/60 hover:scale-105 transition-all">
-Book Seva
-</button>
-</div>
-
-<!-- 🌸 Seva Card 3 -->
-<div class="snap-center flex-shrink-0 w-screen md:w-[48%]
-               bg-gradient-to-br from-amber-50 via-yellow-50 to-white
-               border border-amber-200 rounded-3xl shadow-lg p-8 text-center 
-               relative overflow-hidden hover:shadow-amber-300/60 transition-all duration-500">
+  <!-- Scrollable Seva Cards -->
+  <div id="seva-scroll"
+       class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth gap-6 px-6 pb-6 scrollbar-hide">
+    
+    <!-- 🌸 Seva Card 2 -->
+    <div class="snap-center flex-shrink-0 w-screen md:w-[48%]
+                bg-gradient-to-br from-amber-50 via-yellow-50 to-white
+                border border-amber-200 rounded-3xl shadow-lg p-8 text-center 
+                relative overflow-hidden hover:shadow-amber-300/60 transition-all duration-500">
 
 <div class="absolute top-4 right-4 bg-white/80 text-amber-900 
-           text-sm font-bold tracking-wide rounded-xl px-3.5 py-1.5 
-           border border-amber-300 shadow-inner cursor-default select-none 
-           backdrop-blur-sm">
-₹ 5,000
+            text-sm font-bold tracking-wide rounded-xl px-3.5 py-1.5 
+            border border-amber-300 shadow-inner cursor-default select-none 
+            backdrop-blur-sm">
+  ₹ 1,500
 </div>
 
-<img src="images/lord.png" alt="Lord Dhanvantari" class="w-14 h-14 mx-auto mb-3 opacity-90">
+      <img src="images/lord.png" alt="Lord Dhanvantari" class="w-14 h-14 mx-auto mb-3 opacity-90">
 
-<h4 class="text-xl font-bold text-amber-800">ಶಾಶ್ವತ ಪೂಜಾ ನಿಧಿ (ವೈಯಕ್ತಿಕ)</h4>
-<p class="text-sm text-amber-700 font-semibold">Personal Endowment Pooja</p>
+      <h4 class="text-xl font-bold text-amber-800">ಕಲ್ಪೋಕ್ತ ಪೂಜೆ</h4>
+      <p class="text-sm text-amber-700 font-semibold">One-day Kalpokta Pooja</p>
 
-<hr class="my-4 border-amber-200 w-1/3 mx-auto">
+      <hr class="my-4 border-amber-200 w-1/3 mx-auto">
 
-<p class="text-sm text-slate-700 leading-relaxed">
-ವೈಯಕ್ತಿಕ ಶಾಶ್ವತ ಪೂಜೆ ನಿಧಿ — ಧನ್ವಂತರಿ ದೇವರ ವಿಶೇಷ ಪೂಜಾ ವಿಧಿಗಳು ನಡೆಯುತ್ತವೆ.<br>
-<span class="italic text-slate-600">
-A personal endowment fund for lifelong special pujas to Lord Dhanvantari.
-</span>
-</p>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        ಒಂದು ದಿನದ ಪೂರ್ಣ ವಿಧಿ ಪೂಜೆ – ಗಣಪತಿ ಪೂಜೆ, ಧನ್ವಂತರಿ ಅಭಿಷೇಕ, ನೈವೇದ್ಯ, ಅಲಂಕಾರ.<br>
+        <span class="italic text-slate-600">
+          Full-day traditional rituals including Ganapati Puja, Abhisheka, Naivedya & Alankara.
+        </span>
+      </p>
 
-<button onclick="openSevaModal('seva3', 5000)" 
-class="mt-5 inline-block px-5 py-2.5 rounded-full bg-gradient-to-r 
-              from-amber-500 via-yellow-500 to-amber-400 text-white font-semibold 
-              shadow-md hover:shadow-amber-300/60 hover:scale-105 transition-all">
-Book Seva
-</button>
-</div>
+      <button onclick="openSevaModal('seva2', 1500)" 
+        class="mt-5 inline-block px-5 py-2.5 rounded-full bg-gradient-to-r 
+               from-amber-500 via-yellow-500 to-amber-400 text-white font-semibold 
+               shadow-md hover:shadow-amber-300/60 hover:scale-105 transition-all">
+        Book Seva
+      </button>
+    </div>
 
-<!-- 🌸 Seva Card 4 -->
-<div class="snap-center flex-shrink-0 w-screen md:w-[48%]
-               bg-gradient-to-br from-amber-50 via-yellow-50 to-white
-               border border-amber-200 rounded-3xl shadow-lg p-8 text-center 
-               relative overflow-hidden hover:shadow-amber-300/60 transition-all duration-500">
+    <!-- 🌸 Seva Card 3 -->
+    <div class="snap-center flex-shrink-0 w-screen md:w-[48%]
+                bg-gradient-to-br from-amber-50 via-yellow-50 to-white
+                border border-amber-200 rounded-3xl shadow-lg p-8 text-center 
+                relative overflow-hidden hover:shadow-amber-300/60 transition-all duration-500">
 
 <div class="absolute top-4 right-4 bg-white/80 text-amber-900 
-           text-sm font-bold tracking-wide rounded-xl px-3.5 py-1.5 
-           border border-amber-300 shadow-inner cursor-default select-none 
-           backdrop-blur-sm">
-₹ 1,000
+            text-sm font-bold tracking-wide rounded-xl px-3.5 py-1.5 
+            border border-amber-300 shadow-inner cursor-default select-none 
+            backdrop-blur-sm">
+  ₹ 5,000
 </div>
 
-<img src="images/lord.png" alt="Lord Dhanvantari" class="w-14 h-14 mx-auto mb-3 opacity-90">
+      <img src="images/lord.png" alt="Lord Dhanvantari" class="w-14 h-14 mx-auto mb-3 opacity-90">
 
-<h4 class="text-xl font-bold text-amber-800">ಸಾಮೂಹಿಕ ವಾರ್ಷಿಕ ಪೂಜೆ</h4>
-<p class="text-sm text-amber-700 font-semibold">Annual Collective Pooja</p>
+      <h4 class="text-xl font-bold text-amber-800">ಶಾಶ್ವತ ಪೂಜಾ ನಿಧಿ (ವೈಯಕ್ತಿಕ)</h4>
+      <p class="text-sm text-amber-700 font-semibold">Personal Endowment Pooja</p>
 
-<hr class="my-4 border-amber-200 w-1/3 mx-auto">
+      <hr class="my-4 border-amber-200 w-1/3 mx-auto">
 
-<p class="text-sm text-slate-700 leading-relaxed">
-ತಮ್ಮ ನಾಮ ನಕ್ಷತ್ರ ಹೆಸರನ್ನು ಸಂಕಲ್ಪಿಸಿ ವಾರ್ಷಿಕ ಪೂಜೆಯಲ್ಲಿ ಪಾಲ್ಗೊಳ್ಳಬಹುದು. ಪ್ರಸಾದ ಕಳಿಸಲಾಗುವುದು.<br>
-<span class="italic text-slate-600">
-Participate in the annual collective puja with your name and Nakshatra — Prasadam will be sent.
-</span>
-</p>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        ವೈಯಕ್ತಿಕ ಶಾಶ್ವತ ಪೂಜೆ ನಿಧಿ — ಧನ್ವಂತರಿ ದೇವರ ವಿಶೇಷ ಪೂಜಾ ವಿಧಿಗಳು ನಡೆಯುತ್ತವೆ.<br>
+        <span class="italic text-slate-600">
+          A personal endowment fund for lifelong special pujas to Lord Dhanvantari.
+        </span>
+      </p>
 
-<button onclick="openSevaModal('seva4', 1000)" 
-class="mt-5 inline-block px-5 py-2.5 rounded-full bg-gradient-to-r 
-              from-amber-500 via-yellow-500 to-amber-400 text-white font-semibold 
-              shadow-md hover:shadow-amber-300/60 hover:scale-105 transition-all">
-Book Seva
-</button>
-</div>
+      <button onclick="openSevaModal('seva3', 5000)" 
+        class="mt-5 inline-block px-5 py-2.5 rounded-full bg-gradient-to-r 
+               from-amber-500 via-yellow-500 to-amber-400 text-white font-semibold 
+               shadow-md hover:shadow-amber-300/60 hover:scale-105 transition-all">
+        Book Seva
+      </button>
+    </div>
 
-<!-- 🌸 Seva Card 5 -->
-<div class="snap-center flex-shrink-0 w-screen md:w-[48%]
-               bg-gradient-to-br from-amber-50 via-yellow-50 to-white
-               border border-amber-200 rounded-3xl shadow-lg p-8 text-center 
-               relative overflow-hidden hover:shadow-amber-300/60 transition-all duration-500">
+    <!-- 🌸 Seva Card 4 -->
+    <div class="snap-center flex-shrink-0 w-screen md:w-[48%]
+                bg-gradient-to-br from-amber-50 via-yellow-50 to-white
+                border border-amber-200 rounded-3xl shadow-lg p-8 text-center 
+                relative overflow-hidden hover:shadow-amber-300/60 transition-all duration-500">
 
 <div class="absolute top-4 right-4 bg-white/80 text-amber-900 
-           text-sm font-bold tracking-wide rounded-xl px-3.5 py-1.5 
-           border border-amber-300 shadow-inner cursor-default select-none 
-           backdrop-blur-sm">
-₹ 600
+            text-sm font-bold tracking-wide rounded-xl px-3.5 py-1.5 
+            border border-amber-300 shadow-inner cursor-default select-none 
+            backdrop-blur-sm">
+  ₹ 1,000
 </div>
 
-<img src="images/lord.png" alt="Lord Dhanvantari" class="w-14 h-14 mx-auto mb-3 opacity-90">
+      <img src="images/lord.png" alt="Lord Dhanvantari" class="w-14 h-14 mx-auto mb-3 opacity-90">
 
-<h4 class="text-xl font-bold text-amber-800">ಸರ್ವ ಸೇವೆ</h4>
-<p class="text-sm text-amber-700 font-semibold">Sarva Seva (All-inclusive Pooja)</p>
+      <h4 class="text-xl font-bold text-amber-800">ಸಾಮೂಹಿಕ ವಾರ್ಷಿಕ ಪೂಜೆ</h4>
+      <p class="text-sm text-amber-700 font-semibold">Annual Collective Pooja</p>
 
-<hr class="my-4 border-amber-200 w-1/3 mx-auto">
+      <hr class="my-4 border-amber-200 w-1/3 mx-auto">
 
-<p class="text-sm text-slate-700 leading-relaxed">
-ವಿಘ್ನೇಶ್ವರ ಮತ್ತು ಧನ್ವಂತರಿ ದೇವರ ಪೂರ್ಣಾಭಿಷೇಕ, ನಾಮಾರ್ಚನೆ, ನೈವೇದ್ಯ, ಮಂಗಳಾರತಿ.<br>
-<span class="italic text-slate-600">
-Complete puja to Lord Ganesha and Dhanvantari — Abhisheka, Namarchana, Naivedya & Mangalarati.
-</span>
-</p>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        ತಮ್ಮ ನಾಮ ನಕ್ಷತ್ರ ಹೆಸರನ್ನು ಸಂಕಲ್ಪಿಸಿ ವಾರ್ಷಿಕ ಪೂಜೆಯಲ್ಲಿ ಪಾಲ್ಗೊಳ್ಳಬಹುದು. ಪ್ರಸಾದ ಕಳಿಸಲಾಗುವುದು.<br>
+        <span class="italic text-slate-600">
+          Participate in the annual collective puja with your name and Nakshatra — Prasadam will be sent.
+        </span>
+      </p>
 
-<button onclick="openSevaModal('seva5', 600)" 
-class="mt-5 inline-block px-5 py-2.5 rounded-full bg-gradient-to-r 
-              from-amber-500 via-yellow-500 to-amber-400 text-white font-semibold 
-              shadow-md hover:shadow-amber-300/60 hover:scale-105 transition-all">
-Book Seva
-</button>
-</div>
+      <button onclick="openSevaModal('seva4', 1000)" 
+        class="mt-5 inline-block px-5 py-2.5 rounded-full bg-gradient-to-r 
+               from-amber-500 via-yellow-500 to-amber-400 text-white font-semibold 
+               shadow-md hover:shadow-amber-300/60 hover:scale-105 transition-all">
+        Book Seva
+      </button>
+    </div>
 
-<!-- 🌸 Seva Card 6 -->
-<div class="snap-center flex-shrink-0 w-screen md:w-[48%]
-               bg-gradient-to-br from-amber-50 via-yellow-50 to-white
-               border border-amber-200 rounded-3xl shadow-lg p-8 text-center 
-               relative overflow-hidden hover:shadow-amber-300/60 transition-all duration-500">
+    <!-- 🌸 Seva Card 5 -->
+    <div class="snap-center flex-shrink-0 w-screen md:w-[48%]
+                bg-gradient-to-br from-amber-50 via-yellow-50 to-white
+                border border-amber-200 rounded-3xl shadow-lg p-8 text-center 
+                relative overflow-hidden hover:shadow-amber-300/60 transition-all duration-500">
 
 <div class="absolute top-4 right-4 bg-white/80 text-amber-900 
-           text-sm font-bold tracking-wide rounded-xl px-3.5 py-1.5 
-           border border-amber-300 shadow-inner cursor-default select-none 
-           backdrop-blur-sm">
-₹ 300
+            text-sm font-bold tracking-wide rounded-xl px-3.5 py-1.5 
+            border border-amber-300 shadow-inner cursor-default select-none 
+            backdrop-blur-sm">
+  ₹ 600
 </div>
 
-<img src="images/lord.png" alt="Lord Dhanvantari" class="w-14 h-14 mx-auto mb-3 opacity-90">
+      <img src="images/lord.png" alt="Lord Dhanvantari" class="w-14 h-14 mx-auto mb-3 opacity-90">
 
-<h4 class="text-xl font-bold text-amber-800">ಜನ್ಮ ನಕ್ಷತ್ರ ಪೂಜೆ</h4>
-<p class="text-sm text-amber-700 font-semibold">ma Nakshatra Pooja</p>
+      <h4 class="text-xl font-bold text-amber-800">ಸರ್ವ ಸೇವೆ</h4>
+      <p class="text-sm text-amber-700 font-semibold">Sarva Seva (All-inclusive Pooja)</p>
 
-<hr class="my-4 border-amber-200 w-1/3 mx-auto">
+      <hr class="my-4 border-amber-200 w-1/3 mx-auto">
 
-<p class="text-sm text-slate-700 leading-relaxed">
-ಜನ್ಮ ನಕ್ಷತ್ರದಂದು ಧನ್ವಂತರಿ ದೇವರಿಗೆ ಪೂಜೆ ಸಲ್ಲಿಸಿ ಆರೋಗ್ಯ ಆಯುಷ್ಯ ಪ್ರಾರ್ಥನೆ.<br>
-<span class="italic text-slate-600">
-Perform special puja to Lord Dhanvantari on your birth star day, seeking health and long life.
-</span>
-</p>
+      <p class="text-sm text-slate-700 leading-relaxed">
+        ವಿಘ್ನೇಶ್ವರ ಮತ್ತು ಧನ್ವಂತರಿ ದೇವರ ಪೂರ್ಣಾಭಿಷೇಕ, ನಾಮಾರ್ಚನೆ, ನೈವೇದ್ಯ, ಮಂಗಳಾರತಿ.<br>
+        <span class="italic text-slate-600">
+          Complete puja to Lord Ganesha and Dhanvantari — Abhisheka, Namarchana, Naivedya & Mangalarati.
+        </span>
+      </p>
 
-<button onclick="openSevaModal('seva6', 300)" 
-class="mt-5 inline-block px-5 py-2.5 rounded-full bg-gradient-to-r 
-              from-amber-500 via-yellow-500 to-amber-400 text-white font-semibold 
-              shadow-md hover:shadow-amber-300/60 hover:scale-105 transition-all">
-Book Seva
-</button>
+      <button onclick="openSevaModal('seva5', 600)" 
+        class="mt-5 inline-block px-5 py-2.5 rounded-full bg-gradient-to-r 
+               from-amber-500 via-yellow-500 to-amber-400 text-white font-semibold 
+               shadow-md hover:shadow-amber-300/60 hover:scale-105 transition-all">
+        Book Seva
+      </button>
+    </div>
+
+    <!-- 🌸 Seva Card 6 -->
+    <div class="snap-center flex-shrink-0 w-screen md:w-[48%]
+                bg-gradient-to-br from-amber-50 via-yellow-50 to-white
+                border border-amber-200 rounded-3xl shadow-lg p-8 text-center 
+                relative overflow-hidden hover:shadow-amber-300/60 transition-all duration-500">
+
+<div class="absolute top-4 right-4 bg-white/80 text-amber-900 
+            text-sm font-bold tracking-wide rounded-xl px-3.5 py-1.5 
+            border border-amber-300 shadow-inner cursor-default select-none 
+            backdrop-blur-sm">
+  ₹ 300
 </div>
-</div>
 
-<!-- Dots Indicator -->
-<div id="seva-dots" class="flex justify-center gap-2 mt-4"></div>
+      <img src="images/lord.png" alt="Lord Dhanvantari" class="w-14 h-14 mx-auto mb-3 opacity-90">
+
+      <h4 class="text-xl font-bold text-amber-800">ಜನ್ಮ ನಕ್ಷತ್ರ ಪೂಜೆ</h4>
+      <p class="text-sm text-amber-700 font-semibold">ma Nakshatra Pooja</p>
+
+      <hr class="my-4 border-amber-200 w-1/3 mx-auto">
+
+      <p class="text-sm text-slate-700 leading-relaxed">
+        ಜನ್ಮ ನಕ್ಷತ್ರದಂದು ಧನ್ವಂತರಿ ದೇವರಿಗೆ ಪೂಜೆ ಸಲ್ಲಿಸಿ ಆರೋಗ್ಯ ಆಯುಷ್ಯ ಪ್ರಾರ್ಥನೆ.<br>
+        <span class="italic text-slate-600">
+          Perform special puja to Lord Dhanvantari on your birth star day, seeking health and long life.
+        </span>
+      </p>
+
+      <button onclick="openSevaModal('seva6', 300)" 
+        class="mt-5 inline-block px-5 py-2.5 rounded-full bg-gradient-to-r 
+               from-amber-500 via-yellow-500 to-amber-400 text-white font-semibold 
+               shadow-md hover:shadow-amber-300/60 hover:scale-105 transition-all">
+        Book Seva
+      </button>
+    </div>
+  </div>
+
+  <!-- Dots Indicator -->
+  <div id="seva-dots" class="flex justify-center gap-2 mt-4"></div>
 </article>
 
 
 <!-- Modal -->
 <div id="modal" class="fixed inset-0 hidden z-50 flex items-center justify-center">
-<div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeModal()"></div>
-<div id="modalPanel" class="relative bg-white rounded-2xl max-w-lg w-[92%] p-6 shadow-2xl z-10"></div>
+  <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" onclick="closeModal()"></div>
+  <div id="modalPanel" class="relative bg-white rounded-2xl max-w-lg w-[92%] p-6 shadow-2xl z-10"></div>
 </div>
 
 
-<!-- === EVENTS SECTION === -->
+  <!-- === EVENTS SECTION === -->
 <article id="events"
-class="bg-white rounded-2xl p-0 shadow overflow-hidden md:col-span-2 w-screen relative left-[50%] right-[50%] -mx-[50vw]">
-<h3 class="text-amber-700 font-semibold text-2xl mb-4 text-center md:text-left px-6 pt-6">
-ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮಗಳು / Upcoming Events
-</h3>
+         class="bg-white rounded-2xl p-0 shadow overflow-hidden md:col-span-2 w-screen relative left-[50%] right-[50%] -mx-[50vw]">
+  <h3 class="text-amber-700 font-semibold text-2xl mb-4 text-center md:text-left px-6 pt-6">
+    ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮಗಳು / Upcoming Events
+  </h3>
 
-<div class="relative">
-<!-- 🌿 Horizontal Scroll -->
-<div id="event-scroll"
-class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide md:grid md:grid-cols-2 md:overflow-visible">
+  <div class="relative">
+    <!-- 🌿 Horizontal Scroll -->
+    <div id="event-scroll"
+         class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide md:grid md:grid-cols-2 md:overflow-visible">
 
-<!-- 🌼 EVENT 1 -->
-<div class="snap-center flex-shrink-0 w-screen md:w-auto min-h-[520px] md:min-h-[620px] relative overflow-hidden 
-                 rounded-none md:rounded-3xl shadow-xl border border-amber-300 
-                 bg-gradient-to-br from-amber-50 via-yellow-50 to-white 
-                 p-8 flex flex-col justify-center items-center text-center">
-<div class="absolute inset-0 pointer-events-none">
-<div class="absolute inset-0 
-                     bg-[radial-gradient(circle_at_center,rgba(255,220,160,0.25)_0%,transparent_70%)]
-                     blur-3xl opacity-70 animate-pulse-slow"></div>
-</div>
+      <!-- 🌼 EVENT 1 -->
+      <div class="snap-center flex-shrink-0 w-screen md:w-auto min-h-[520px] md:min-h-[620px] relative overflow-hidden 
+                  rounded-none md:rounded-3xl shadow-xl border border-amber-300 
+                  bg-gradient-to-br from-amber-50 via-yellow-50 to-white 
+                  p-8 flex flex-col justify-center items-center text-center">
+        <div class="absolute inset-0 pointer-events-none">
+          <div class="absolute inset-0 
+                      bg-[radial-gradient(circle_at_center,rgba(255,220,160,0.25)_0%,transparent_70%)]
+                      blur-3xl opacity-70 animate-pulse-slow"></div>
+        </div>
 
-<div class="relative z-10 px-6 md:px-10 py-4 md:py-6">
-<h2 class="text-3xl md:text-4xl font-extrabold text-amber-800 drop-shadow-sm mb-4">
-ಕಾರ್ತಿಕ ದೀಪೋತ್ಸವ / Kartika Deepotsava
-</h2>
-<p class="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-ದೈವಿಕ ಬೆಳಕಿನ ಹಬ್ಬ – ದೇವಾಲಯದ ಆವರಣದಲ್ಲಿ ಪವಿತ್ರ ಕಿರಣಗಳ ನೈವೇದ್ಯ.<br>
-Festival of Lights — celebrating divine illumination and spiritual harmony.
-</p>
-<p class="text-lg md:text-xl font-semibold text-amber-700 mb-6">
-📅 <span class="font-bold text-amber-900">20 November 2025</span>
-</p>
+        <div class="relative z-10 px-6 md:px-10 py-4 md:py-6">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-amber-800 drop-shadow-sm mb-4">
+            ಕಾರ್ತಿಕ ದೀಪೋತ್ಸವ / Kartika Deepotsava
+          </h2>
+          <p class="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
+            ದೈವಿಕ ಬೆಳಕಿನ ಹಬ್ಬ – ದೇವಾಲಯದ ಆವರಣದಲ್ಲಿ ಪವಿತ್ರ ಕಿರಣಗಳ ನೈವೇದ್ಯ.<br>
+            Festival of Lights — celebrating divine illumination and spiritual harmony.
+          </p>
+          <p class="text-lg md:text-xl font-semibold text-amber-700 mb-6">
+            📅 <span class="font-bold text-amber-900">20 November 2025</span>
+          </p>
 
-<!-- Countdown -->
-<div id="vardhantuCounter1"
-class="inline-block px-6 py-3 text-lg md:text-xl font-bold text-amber-900 
-                     bg-white/80 rounded-xl shadow border border-amber-200
-                     backdrop-blur-md mb-6">
-</div>
+          <!-- Countdown -->
+          <div id="vardhantuCounter1"
+               class="inline-block px-6 py-3 text-lg md:text-xl font-bold text-amber-900 
+                      bg-white/80 rounded-xl shadow border border-amber-200
+                      backdrop-blur-md mb-6">
+          </div>
 <!-- Event 1 -->
-<button onclick="openInvitationModal('images/events/event1.png')" 
-<!--<button onclick="openInvitationModal('images/events/event1.png')" 
- class="inline-block px-8 py-3 md:px-10 md:py-4 rounded-full text-base md:text-lg text-white font-semibold
-        bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400
-        shadow-lg hover:scale-105 hover:shadow-amber-300/50 transition-transform duration-500">
- 📜 View Invitation
+<button onclick="openInvitationModal('images/events/k_d_2025.jpg')" 
+  class="inline-block px-8 py-3 md:px-10 md:py-4 rounded-full text-base md:text-lg text-white font-semibold
+         bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400
+         shadow-lg hover:scale-105 hover:shadow-amber-300/50 transition-transform duration-500">
+  📜 View Invitation
 </button>
-</button>-->
 
-</div>
-</div>
-
-<!-- 🌸 EVENT 2 -->
-<div class="snap-center flex-shrink-0 w-screen md:w-auto min-h-[520px] md:min-h-[620px] relative overflow-hidden 
-                 rounded-none md:rounded-3xl shadow-xl border border-amber-300 
-                 bg-gradient-to-br from-amber-50 via-yellow-50 to-white 
-                 p-8 flex flex-col justify-center items-center text-center">
-<div class="absolute inset-0 pointer-events-none">
-<div class="absolute inset-0 
-                     bg-[radial-gradient(circle_at_center,rgba(255,220,160,0.25)_0%,transparent_70%)]
-                     blur-3xl opacity-70 animate-pulse-slow"></div>
-</div>
-
-<div class="relative z-10 px-6 md:px-10 py-4 md:py-6">
-<h2 class="text-3xl md:text-4xl font-extrabold text-amber-800 drop-shadow-sm mb-4">
-ವರ್ಧಂತ್ಯುಸ್ತವ / Vardhantyustava
-</h2>
-<p class="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
-ಶ್ರೀ ಧನ್ವಂತರಿ ದೇವರ ಆರಾಧನೆಯ ದಿನ – ಆರೋಗ್ಯ, ಆಯುಷ್ಯ ಹಾಗೂ ಶಾಂತಿಯ ಉತ್ಸವ.<br>
-A sacred celebration of divine growth and healing — invoking Lord Dhanvantari’s eternal blessings.
-</p>
-<p class="text-lg md:text-xl font-semibold text-amber-700 mb-6">
-📅 <span class="font-bold text-amber-900">11,12,13 January 2026</span>
+<p class="mt-4 text-lg md:text-xl text-amber-700 font-semibold">
+  <a onclick="openVideoModal('videos/k_d_2024.mp4')"
+     class="cursor-pointer underline decoration-amber-400 underline-offset-4 
+            hover:text-amber-900 hover:decoration-amber-600 transition">
+    🎥 Watch Last Year's Video
+  </a>
 </p>
 
-<!-- Countdown 2 -->
-<div id="vardhantuCounter2"
-class="inline-block px-6 py-3 text-lg md:text-xl font-bold text-amber-900 
-                     bg-white/80 rounded-xl shadow border border-amber-200
-                     backdrop-blur-md mb-6">
-</div>
+
+        </div>
+      </div>
+
+      <!-- 🌸 EVENT 2 -->
+      <div class="snap-center flex-shrink-0 w-screen md:w-auto min-h-[520px] md:min-h-[620px] relative overflow-hidden 
+                  rounded-none md:rounded-3xl shadow-xl border border-amber-300 
+                  bg-gradient-to-br from-amber-50 via-yellow-50 to-white 
+                  p-8 flex flex-col justify-center items-center text-center">
+        <div class="absolute inset-0 pointer-events-none">
+          <div class="absolute inset-0 
+                      bg-[radial-gradient(circle_at_center,rgba(255,220,160,0.25)_0%,transparent_70%)]
+                      blur-3xl opacity-70 animate-pulse-slow"></div>
+        </div>
+
+        <div class="relative z-10 px-6 md:px-10 py-4 md:py-6">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-amber-800 drop-shadow-sm mb-4">
+            ವರ್ಧಂತ್ಯುಸ್ತವ / Vardhantyustava
+          </h2>
+          <p class="text-base md:text-lg text-slate-700 leading-relaxed mb-6">
+            ಶ್ರೀ ಧನ್ವಂತರಿ ದೇವರ ಆರಾಧನೆಯ ದಿನ – ಆರೋಗ್ಯ, ಆಯುಷ್ಯ ಹಾಗೂ ಶಾಂತಿಯ ಉತ್ಸವ.<br>
+            A sacred celebration of divine growth and healing — invoking Lord Dhanvantari’s eternal blessings.
+          </p>
+          <p class="text-lg md:text-xl font-semibold text-amber-700 mb-6">
+            📅 <span class="font-bold text-amber-900">11,12,13 January 2026</span>
+          </p>
+
+          <!-- Countdown 2 -->
+          <div id="vardhantuCounter2"
+               class="inline-block px-6 py-3 text-lg md:text-xl font-bold text-amber-900 
+                      bg-white/80 rounded-xl shadow border border-amber-200
+                      backdrop-blur-md mb-6">
+          </div>
 
 <!--<button onclick="openInvitationModal('images/events/event1.png')" 
- class="inline-block px-8 py-3 md:px-10 md:py-4 rounded-full text-base md:text-lg text-white font-semibold
-        bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400
-        shadow-lg hover:scale-105 hover:shadow-amber-300/50 transition-transform duration-500">
- 📜 View Invitation
+  class="inline-block px-8 py-3 md:px-10 md:py-4 rounded-full text-base md:text-lg text-white font-semibold
+         bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400
+         shadow-lg hover:scale-105 hover:shadow-amber-300/50 transition-transform duration-500">
+  📜 View Invitation
 </button>-->
-</div>
-</div>
-</div>
+        </div>
+      </div>
+    </div>
 
-<!-- 🔘 Dots for mobile -->
-<div id="eventDots" class="absolute bottom-5 left-1/2 -translate-x-1/2 
-                            flex justify-center space-x-2 md:hidden z-20"></div>
-</div>
+    <!-- 🔘 Dots for mobile -->
+    <div id="eventDots" class="absolute bottom-5 left-1/2 -translate-x-1/2 
+                             flex justify-center space-x-2 md:hidden z-20"></div>
+  </div>
 </article>
 
 <!-- 🌼 Invitation Modal -->
 <div id="invitationModal" 
-class="fixed inset-0 hidden z-[70] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
-<div class="relative bg-white rounded-3xl shadow-2xl max-w-3xl w-full p-6 animate-fadeIn">
-<!-- Header -->
-<div class="flex justify-between items-center mb-4 border-b border-amber-100 pb-3">
-<h4 class="text-2xl font-extrabold text-amber-800">🌸 Event Invitation</h4>
-<button id="closeInvitationModal"
-class="flex items-center gap-1 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-50 
-              border border-amber-200 text-amber-800 font-semibold text-sm shadow hover:scale-105 transition">
-✕ Close
-</button>
-</div>
+     class="fixed inset-0 hidden z-[70] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+  <div class="relative bg-white rounded-3xl shadow-2xl max-w-3xl w-full p-6 animate-fadeIn">
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-4 border-b border-amber-100 pb-3">
+      <h4 class="text-2xl font-extrabold text-amber-800">🌸 Event Invitation</h4>
+      <button id="closeInvitationModal"
+        class="flex items-center gap-1 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-50 
+               border border-amber-200 text-amber-800 font-semibold text-sm shadow hover:scale-105 transition">
+        ✕ Close
+      </button>
+    </div>
 
-<!-- Image -->
-<div class="flex justify-center">
-<img id="invitationImage" src="" 
-alt="Event Invitation" 
-class="rounded-2xl max-h-[75vh] w-auto shadow-lg border border-amber-100">
-</div>
-</div>
+    <!-- Image -->
+    <div class="flex justify-center">
+      <img id="invitationImage" src="" 
+           alt="Event Invitation" 
+           class="rounded-2xl max-h-[75vh] w-auto shadow-lg border border-amber-100">
+    </div>
+  </div>
 </div>
 
 
@@ -802,155 +809,155 @@ class="rounded-2xl max-h-[75vh] w-auto shadow-lg border border-amber-100">
 
 <!-- === PHOTO GALLERY === -->
 <article id="gallery" class="bg-white rounded-2xl p-6 shadow relative">
-<h3 class="text-amber-700 font-semibold text-lg mb-4">Photo Gallery</h3>
-<div id="galleryScroll" class="scroll-container">
-<img src="images/gallery/img1.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
-<img src="images/gallery/img2.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
-<img src="images/gallery/img3.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
-<img src="images/gallery/img4.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
-<img src="images/gallery/img5.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
-</div>
-<div class="flex justify-center gap-2 mt-3"><div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
-<div class="text-center mt-6">
-<button id="viewMoreGallery"
-class="px-6 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400 shadow-md hover:scale-105 transition">
-View More
-</button>
-</div>
+  <h3 class="text-amber-700 font-semibold text-lg mb-4">Photo Gallery</h3>
+  <div id="galleryScroll" class="scroll-container">
+    <img src="images/gallery/img1.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
+    <img src="images/gallery/img2.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
+    <img src="images/gallery/img3.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
+    <img src="images/gallery/img4.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
+    <img src="images/gallery/img5.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
+  </div>
+  <div class="flex justify-center gap-2 mt-3"><div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  <div class="text-center mt-6">
+    <button id="viewMoreGallery"
+      class="px-6 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400 shadow-md hover:scale-105 transition">
+      View More
+    </button>
+  </div>
 </article>
 
 <!-- === FESTIVALS === -->
 <article id="festivals" class="bg-white rounded-2xl p-6 shadow relative mt-10">
-<h3 class="text-amber-700 font-semibold text-lg mb-4">Festival Glimpses</h3>
-<div id="festivalScroll" class="scroll-container">
-<img src="images/festivals/festival1.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
-<img src="images/festivals/festival2.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
-<img src="images/festivals/festival3.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
-<img src="images/festivals/festival4.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
-</div>
-<div class="flex justify-center gap-2 mt-3"><div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
-<div class="text-center mt-6">
-<button id="viewMoreFestivals"
-class="px-6 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400 shadow-md hover:scale-105 transition">
-View More
-</button>
-</div>
+  <h3 class="text-amber-700 font-semibold text-lg mb-4">Festival Glimpses</h3>
+  <div id="festivalScroll" class="scroll-container">
+    <img src="images/festivals/festival1.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
+    <img src="images/festivals/festival2.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
+    <img src="images/festivals/festival3.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
+    <img src="images/festivals/festival4.png" class="scroll-item h-64 w-full object-cover rounded-xl cursor-pointer" alt="">
+  </div>
+  <div class="flex justify-center gap-2 mt-3"><div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  <div class="text-center mt-6">
+    <button id="viewMoreFestivals"
+      class="px-6 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400 shadow-md hover:scale-105 transition">
+      View More
+    </button>
+  </div>
 </article>
 
 <!-- === VIDEOS === -->
 <article id="videos" class="bg-white rounded-2xl p-6 shadow relative mt-10">
-<h3 class="text-amber-700 font-semibold text-lg mb-4">Temple Videos</h3>
-<div id="videoScroll" class="scroll-container">
-<iframe class="scroll-item h-64 w-full rounded-xl shadow" src="https://www.youtube.com/embed/8w7TQPxW96M" allowfullscreen></iframe>
-<iframe class="scroll-item h-64 w-full rounded-xl shadow" src="https://www.youtube.com/embed/XdWbUrnnYx4" allowfullscreen></iframe>
-</div>
-<div class="flex justify-center gap-2 mt-3"><div class="dot active"></div><div class="dot"></div></div>
-<div class="text-center mt-6">
-<button id="viewMoreVideos"
-class="px-6 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400 shadow-md hover:scale-105 transition">
-View More
-</button>
-</div>
+  <h3 class="text-amber-700 font-semibold text-lg mb-4">Temple Videos</h3>
+  <div id="videoScroll" class="scroll-container">
+    <iframe class="scroll-item h-64 w-full rounded-xl shadow" src="https://www.youtube.com/embed/8w7TQPxW96M" allowfullscreen></iframe>
+    <iframe class="scroll-item h-64 w-full rounded-xl shadow" src="https://www.youtube.com/embed/XdWbUrnnYx4" allowfullscreen></iframe>
+  </div>
+  <div class="flex justify-center gap-2 mt-3"><div class="dot active"></div><div class="dot"></div></div>
+  <div class="text-center mt-6">
+    <button id="viewMoreVideos"
+      class="px-6 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400 shadow-md hover:scale-105 transition">
+      View More
+    </button>
+  </div>
 </article>
 
 <!-- === MODALS === -->
 <!-- Photo Gallery Modal -->
 <div id="galleryModal" class="fixed inset-0 hidden z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
-<div class="relative bg-white rounded-3xl shadow-2xl max-w-6xl w-full p-6 overflow-y-auto max-h-[90vh]">
-<div class="flex justify-between items-center mb-6 border-b border-amber-100 pb-3">
-<h4 class="text-2xl font-extrabold text-amber-800">Temple Photo Gallery</h4>
-<button id="closeGalleryModal"
-class="flex items-center gap-1 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-50 border border-amber-200 text-amber-800 font-semibold text-sm shadow hover:scale-105 transition">
-✕ Close
-</button>
-</div>
-<div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-<img src="images/gallery/img1.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
-<img src="images/gallery/img2.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
-<img src="images/gallery/img3.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
-<img src="images/gallery/img4.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
-<img src="images/gallery/img5.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
-</div>
-</div>
+  <div class="relative bg-white rounded-3xl shadow-2xl max-w-6xl w-full p-6 overflow-y-auto max-h-[90vh]">
+    <div class="flex justify-between items-center mb-6 border-b border-amber-100 pb-3">
+      <h4 class="text-2xl font-extrabold text-amber-800">Temple Photo Gallery</h4>
+      <button id="closeGalleryModal"
+        class="flex items-center gap-1 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-50 border border-amber-200 text-amber-800 font-semibold text-sm shadow hover:scale-105 transition">
+        ✕ Close
+      </button>
+    </div>
+    <div id="galleryGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <img src="images/gallery/img1.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
+      <img src="images/gallery/img2.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
+      <img src="images/gallery/img3.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
+      <img src="images/gallery/img4.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
+      <img src="images/gallery/img5.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
+    </div>
+  </div>
 </div>
 
 <!-- Festivals Modal -->
 <div id="festivalModal" class="fixed inset-0 hidden z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
-<div class="relative bg-white rounded-3xl shadow-2xl max-w-6xl w-full p-6 overflow-y-auto max-h-[90vh]">
-<div class="flex justify-between items-center mb-6 border-b border-amber-100 pb-3">
-<h4 class="text-2xl font-extrabold text-amber-800">Festival Glimpses</h4>
-<button id="closeFestivalModal"
-class="flex items-center gap-1 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-50 border border-amber-200 text-amber-800 font-semibold text-sm shadow hover:scale-105 transition">
-✕ Close
-</button>
-</div>
-<div id="festivalGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-<img src="images/festivals/festival1.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
-<img src="images/festivals/festival2.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
-<img src="images/festivals/festival3.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
-<img src="images/festivals/festival4.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
-</div>
-</div>
+  <div class="relative bg-white rounded-3xl shadow-2xl max-w-6xl w-full p-6 overflow-y-auto max-h-[90vh]">
+    <div class="flex justify-between items-center mb-6 border-b border-amber-100 pb-3">
+      <h4 class="text-2xl font-extrabold text-amber-800">Festival Glimpses</h4>
+      <button id="closeFestivalModal"
+        class="flex items-center gap-1 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-50 border border-amber-200 text-amber-800 font-semibold text-sm shadow hover:scale-105 transition">
+        ✕ Close
+      </button>
+    </div>
+    <div id="festivalGrid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <img src="images/festivals/festival1.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
+      <img src="images/festivals/festival2.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
+      <img src="images/festivals/festival3.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
+      <img src="images/festivals/festival4.png" class="w-full h-48 object-cover rounded-xl shadow hover:scale-105 cursor-pointer">
+    </div>
+  </div>
 </div>
 
 <!-- Videos Modal -->
-<div id="videoModal" class="fixed inset-0 hidden z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
-<div class="relative bg-white rounded-3xl shadow-2xl max-w-6xl w-full p-6 overflow-y-auto max-h-[90vh]">
+<div id="singleVideoModal" class="fixed inset-0 hidden z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+  <div class="relative bg-white rounded-3xl shadow-2xl max-w-6xl w-full p-6 overflow-y-auto max-h-[90vh]">
+    
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6 border-b border-amber-100 pb-3">
+      <h4 class="text-2xl font-extrabold text-amber-800">Temple Video Collection</h4>
+      <button id="closeVideoModal"
+        class="flex items-center gap-1 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-50 border border-amber-200 text-amber-800 font-semibold text-sm shadow hover:scale-105 transition">
+        ✕ Close
+      </button>
+    </div>
 
-<!-- Header -->
-<div class="flex justify-between items-center mb-6 border-b border-amber-100 pb-3">
-<h4 class="text-2xl font-extrabold text-amber-800">Temple Video Collection</h4>
-<button id="closeVideoModal"
-class="flex items-center gap-1 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-50 border border-amber-200 text-amber-800 font-semibold text-sm shadow hover:scale-105 transition">
-✕ Close
-</button>
-</div>
+    <!-- Video Grid -->
+    <div id="videoGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Local Videos -->
+      <div class="aspect-video rounded-xl shadow-lg overflow-hidden">
+        <video class="w-full h-full object-cover" controls>
+          <source src="/videos/video1.mp4" type="video/mp4">
+        </video>
+      </div>
 
-<!-- Video Grid -->
-<div id="videoGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="aspect-video rounded-xl shadow-lg overflow-hidden">
+        <video class="w-full h-full object-cover" controls>
+          <source src="/videos/video2.mp4" type="video/mp4">
+        </video>
+      </div>
 
-<!-- Local Videos -->
-<div class="aspect-video rounded-xl shadow-lg overflow-hidden">
-<video class="w-full h-full object-cover" controls>
-<source src="/videos/video1.mp4" type="video/mp4">
-</video>
-</div>
+      <div class="aspect-video rounded-xl shadow-lg overflow-hidden">
+        <video class="w-full h-full object-cover" controls>
+          <source src="/videos/video5.mp4" type="video/mp4">
+        </video>
+      </div>
 
-<div class="aspect-video rounded-xl shadow-lg overflow-hidden">
-<video class="w-full h-full object-cover" controls>
-<source src="/videos/video2.mp4" type="video/mp4">
-</video>
-</div>
+      <div class="aspect-video rounded-xl shadow-lg overflow-hidden">
+        <video class="w-full h-full object-cover" controls>
+          <source src="/videos/video6.mp4" type="video/mp4">
+        </video>
+      </div>
 
-<div class="aspect-video rounded-xl shadow-lg overflow-hidden">
-<video class="w-full h-full object-cover" controls>
-<source src="/videos/video3.mp4" type="video/mp4">
-</video>
-</div>
+      <!-- YouTube Videos -->
+      <div class="aspect-video rounded-xl shadow-lg overflow-hidden">
+        <iframe class="w-full h-full"
+                src="https://www.youtube.com/embed/8w7TQPxW96M?enablejsapi=1"
+                allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+      </div>
 
-<div class="aspect-video rounded-xl shadow-lg overflow-hidden">
-<video class="w-full h-full object-cover" controls>
-<source src="/videos/video4.mp4" type="video/mp4">
-</video>
-</div>
+      <div class="aspect-video rounded-xl shadow-lg overflow-hidden">
+        <iframe class="w-full h-full"
+                src="https://www.youtube.com/embed/XdWbUrnnYx4?enablejsapi=1"
+                allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+      </div>
 
-<!-- YouTube Videos -->
-<div class="aspect-video rounded-xl shadow-lg overflow-hidden">
-<iframe class="w-full h-full"
-src="https://www.youtube.com/embed/8w7TQPxW96M?enablejsapi=1"
-allow="autoplay; encrypted-media"
-allowfullscreen></iframe>
-</div>
-
-<div class="aspect-video rounded-xl shadow-lg overflow-hidden">
-<iframe class="w-full h-full"
-src="https://www.youtube.com/embed/XdWbUrnnYx4?enablejsapi=1"
-allow="autoplay; encrypted-media"
-allowfullscreen></iframe>
-</div>
-
-</div>
-</div>
+    </div>
+  </div>
 </div>
 
 
@@ -958,124 +965,123 @@ allowfullscreen></iframe>
 
 <!-- Shared Lightbox for images -->
 <div id="lightbox" class="fixed inset-0 hidden z-[60] bg-black/90 flex items-center justify-center">
-<button id="prevBtn" class="absolute left-6 text-white text-4xl font-bold hover:text-amber-300 select-none">❮</button>
-<img id="lightboxImg" src="" class="max-h-[90vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-amber-200 transition-all duration-300">
-<button id="nextBtn" class="absolute right-6 text-white text-4xl font-bold hover:text-amber-300 select-none">❯</button>
-<button id="closeLightbox" class="absolute top-6 right-6 px-4 py-2 bg-amber-100 text-amber-800 rounded-full font-semibold hover:bg-amber-200 shadow">
-✕
-</button>
+  <button id="prevBtn" class="absolute left-6 text-white text-4xl font-bold hover:text-amber-300 select-none">❮</button>
+  <img id="lightboxImg" src="" class="max-h-[90vh] max-w-[90vw] rounded-2xl shadow-2xl border-4 border-amber-200 transition-all duration-300">
+  <button id="nextBtn" class="absolute right-6 text-white text-4xl font-bold hover:text-amber-300 select-none">❯</button>
+  <button id="closeLightbox" class="absolute top-6 right-6 px-4 py-2 bg-amber-100 text-amber-800 rounded-full font-semibold hover:bg-amber-200 shadow">
+    ✕
+  </button>
 </div>
 
 <!-- 🌸 DONATE SECTION (Matching Other Headings) -->
 <article id="donate" class="bg-white rounded-2xl p-6 shadow">
+  
+  <!-- ✨ Section Heading -->
+  <div class="text-center mb-6">
+    <h2 class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-500 
+               bg-clip-text text-transparent drop-shadow-md animate-fadeIn">
+      Support the Temple
+    </h2>
+    <div class="mt-4 flex items-center justify-center gap-3">
+      <span class="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
+      <img src="images/lord.png" alt="divider icon" class="w-8 h-8 animate-pulse-slow opacity-90">
+      <span class="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
+    </div>
+  </div>
 
-<!-- ✨ Section Heading -->
-<div class="text-center mb-6">
-<h2 class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-500 
-              bg-clip-text text-transparent drop-shadow-md animate-fadeIn">
-Support the Temple
-</h2>
-<div class="mt-4 flex items-center justify-center gap-3">
-<span class="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
-<img src="images/lord.png" alt="divider icon" class="w-8 h-8 animate-pulse-slow opacity-90">
-<span class="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
-</div>
-</div>
+  <!-- 🌼 Description -->
+  <p class="mt-2 text-base md:text-lg text-slate-700 text-center leading-relaxed">
+    Donations help sustain daily rituals, temple maintenance, Ayurveda wellness programs, and spiritual activities.
+  </p>
 
-<!-- 🌼 Description -->
-<p class="mt-2 text-base md:text-lg text-slate-700 text-center leading-relaxed">
-Donations help sustain daily rituals, temple maintenance, Ayurveda wellness programs, and spiritual activities.
-</p>
+  <!-- 💰 Donation QR + Info -->
+  <div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-6">
+    <div class="w-28 h-28 bg-amber-50 rounded-2xl border border-amber-100 overflow-hidden shadow-inner p-2">
+      <img src="images/qrcode/qrcode.png" alt="Temple UPI QR" class="w-full h-full object-contain">
+    </div>
 
-<!-- 💰 Donation QR + Info -->
-<div class="mt-6 flex flex-col sm:flex-row items-center justify-center gap-6">
-<div class="w-28 h-28 bg-amber-50 rounded-2xl border border-amber-100 overflow-hidden shadow-inner p-2">
-<img src="images/qrcode/qrcode.png" alt="Temple UPI QR" class="w-full h-full object-contain">
-</div>
-
-<div class="text-center sm:text-left">
-      <p class="text-lg font-bold text-amber-800">UPI ID: 9902105637</p>
+    <div class="text-center sm:text-left">
       <p class="text-lg font-bold text-amber-800">UPI ID: 9902105637@ybl</p>
-<p class="text-sm text-slate-600">Temple UPI for online donations</p>
-</div>
-</div>
+      <p class="text-sm text-slate-600">Temple UPI for online donations</p>
+    </div>
+  </div>
 
-<!-- 🙏 Donate Button -->
-<div class="mt-8 text-center">
-<button onclick="openModal('donate')" 
-class="px-8 py-3 rounded-full bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400 
-            text-white font-semibold shadow-md hover:shadow-amber-300/60 hover:scale-105 transition-all duration-300">
-💛 Donate Now
-</button>
-</div>
+  <!-- 🙏 Donate Button -->
+  <div class="mt-8 text-center">
+    <button onclick="openModal('donate')" 
+      class="px-8 py-3 rounded-full bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400 
+             text-white font-semibold shadow-md hover:shadow-amber-300/60 hover:scale-105 transition-all duration-300">
+      💛 Donate Now
+    </button>
+  </div>
 
 </article>
 
-
-<!-- ===== SIDEBAR ===== -->
+    
+  <!-- ===== SIDEBAR ===== -->
 <article id="visit" class="bg-white rounded-2xl p-6 shadow">
-<div class="bg-white rounded-2xl p-4 shadow">
+  <div class="bg-white rounded-2xl p-4 shadow">
 
-<!-- 🌸 Location & Contact Heading (Matching Other Sections) -->
-<div class="text-center mb-6">
-<h2 class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-500 
-                bg-clip-text text-transparent drop-shadow-md animate-fadeIn">
-Temple Location & Contact
-</h2>
-<div class="mt-4 flex items-center justify-center gap-3">
-<span class="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
-<img src="images/lord.png" alt="divider icon" class="w-8 h-8 animate-pulse-slow opacity-90">
-<span class="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
-</div>
-</div>
+    <!-- 🌸 Location & Contact Heading (Matching Other Sections) -->
+    <div class="text-center mb-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-500 
+                 bg-clip-text text-transparent drop-shadow-md animate-fadeIn">
+        Temple Location & Contact
+      </h2>
+      <div class="mt-4 flex items-center justify-center gap-3">
+        <span class="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
+        <img src="images/lord.png" alt="divider icon" class="w-8 h-8 animate-pulse-slow opacity-90">
+        <span class="w-16 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></span>
+      </div>
+    </div>
 
-<!-- 🗺️ Map Embed -->
-<div class="mt-3 rounded-lg overflow-hidden h-44 bg-amber-50">
-<iframe class="w-full h-full rounded-lg"
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.745112884646!2d74.602701!3d14.014276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf7f50b6a41e1b%3A0x9f412b41f606b31b!2sMarukeri%2C%20Karnataka%20581320!5e0!3m2!1sen!2sin!4v1730874699999!5m2!1sen!2sin"
-allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border:0"></iframe>
-</div>
+    <!-- 🗺️ Map Embed -->
+    <div class="mt-3 rounded-lg overflow-hidden h-44 bg-amber-50">
+      <iframe class="w-full h-full rounded-lg"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.745112884646!2d74.602701!3d14.014276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf7f50b6a41e1b%3A0x9f412b41f606b31b!2sMarukeri%2C%20Karnataka%20581320!5e0!3m2!1sen!2sin!4v1730874699999!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border:0"></iframe>
+    </div>
 
-<!-- 📞 Contact Details -->
-<div class="mt-5 p-4 bg-white/90 border border-amber-200 rounded-2xl shadow-sm hover:shadow-md transition">
-<div class="text-center">
-<p class="text-lg font-bold text-amber-800 tracking-wide">
-📍 Lord Shree Dhanvantari Temple
-</p>
-<p class="mt-1 text-sm text-slate-700">
-Hootkala, Marukeri, Bhatkal, Karnataka – 581320
-</p>
-<p class="mt-2 text-base">
-📞 
-<a href="tel:9902105637" class="text-amber-700 font-semibold hover:text-amber-800 hover:underline transition">
-9902105637
-</a>
-</p>
+    <!-- 📞 Contact Details -->
+    <div class="mt-5 p-4 bg-white/90 border border-amber-200 rounded-2xl shadow-sm hover:shadow-md transition">
+      <div class="text-center">
+        <p class="text-lg font-bold text-amber-800 tracking-wide">
+          📍 Lord Shree Dhanvantari Temple
+        </p>
+        <p class="mt-1 text-sm text-slate-700">
+          Hootkala, Marukeri, Bhatkal, Karnataka – 581320
+        </p>
+        <p class="mt-2 text-base">
+          📞 
+          <a href="tel:9902105637" class="text-amber-700 font-semibold hover:text-amber-800 hover:underline transition">
+            9902105637
+          </a>
+        </p>
 <div class="mt-3 flex flex-wrap gap-3">
-<!-- Get Directions Button -->
-<a href="https://maps.google.com/?q=Shree+Lord+Dhanvantari+Temple,+Marukeri,+Hootkala,+Karnataka+581320"
-target="_blank"
-class="flex-1 min-w-[140px] text-center px-4 py-2 rounded-xl 
-           bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600
+  <!-- Get Directions Button -->
+  <a href="https://maps.google.com/?q=Shree+Lord+Dhanvantari+Temple,+Marukeri,+Hootkala,+Karnataka+581320"
+     target="_blank"
+     class="flex-1 min-w-[140px] text-center px-4 py-2 rounded-xl 
+            bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600
+            text-white font-semibold text-sm shadow-md hover:shadow-lg 
+            hover:scale-105 transition-all duration-300">
+    🗺️ Get Directions
+  </a>
+
+  <!-- Send Email Button -->
+  <button id="openEmailModal"
+    class="flex-1 min-w-[140px] text-center px-4 py-2 rounded-xl 
+           bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400
            text-white font-semibold text-sm shadow-md hover:shadow-lg 
            hover:scale-105 transition-all duration-300">
-🗺️ Get Directions
-</a>
-
-<!-- Send Email Button -->
-<button id="openEmailModal"
-class="flex-1 min-w-[140px] text-center px-4 py-2 rounded-xl 
-          bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400
-          text-white font-semibold text-sm shadow-md hover:shadow-lg 
-          hover:scale-105 transition-all duration-300">
-✉️ Send us an Email
-</button>
+    ✉️ Send us an Email
+  </button>
 </div>
 
-</div>
-</div>
+      </div>
+    </div>
 
-</div>
+  </div>
 </article>
 
 
@@ -1084,69 +1090,69 @@ class="flex-1 min-w-[140px] text-center px-4 py-2 rounded-xl
 
 <!-- ===== FOOTER ===== -->
 <footer class="border-t border-amber-100 py-6 text-center bg-gradient-to-b from-amber-50/70 to-white/80">
-<p class="text-base font-semibold text-amber-800">🪷 May Lord Shree Dhanvantari bless all with Health & Divine Grace 🪷</p>
-<p class="mt-4 text-sm text-amber-700 font-semibold uppercase">Follow us</p>
+  <p class="text-base font-semibold text-amber-800">🪷 May Lord Shree Dhanvantari bless all with Health & Divine Grace 🪷</p>
+  <p class="mt-4 text-sm text-amber-700 font-semibold uppercase">Follow us</p>
 <!-- 🌸 Divine Social Icons with Brand Colors -->
 <div class="mt-6 flex justify-center gap-8 flex-wrap">
-<!-- Facebook -->
-<a href="https://facebook.com/" target="_blank"
-class="group relative w-12 h-12 flex items-center justify-center rounded-full 
-           bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200 
-           shadow-md hover:shadow-amber-300/70 transition-all duration-300 hover:scale-110">
-<i data-lucide="facebook" class="w-6 h-6 text-[#1877F2] group-hover:text-[#0e5dc6] transition"></i>
-<span class="absolute -bottom-7 text-xs text-[#1877F2] font-semibold opacity-0 group-hover:opacity-100 transition">
-Facebook
-</span>
-</a>
+  <!-- Facebook -->
+  <a href="https://facebook.com/" target="_blank"
+     class="group relative w-12 h-12 flex items-center justify-center rounded-full 
+            bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200 
+            shadow-md hover:shadow-amber-300/70 transition-all duration-300 hover:scale-110">
+    <i data-lucide="facebook" class="w-6 h-6 text-[#1877F2] group-hover:text-[#0e5dc6] transition"></i>
+    <span class="absolute -bottom-7 text-xs text-[#1877F2] font-semibold opacity-0 group-hover:opacity-100 transition">
+      Facebook
+    </span>
+  </a>
 
-<!-- Instagram -->
-<a href="https://instagram.com/" target="_blank"
-class="group relative w-12 h-12 flex items-center justify-center rounded-full 
-           bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200 
-           shadow-md hover:shadow-amber-300/70 transition-all duration-300 hover:scale-110">
-<i data-lucide="instagram" class="w-6 h-6 text-[#E4405F] group-hover:text-[#C13584] transition"></i>
-<span class="absolute -bottom-7 text-xs text-[#E4405F] font-semibold opacity-0 group-hover:opacity-100 transition">
-Instagram
-</span>
-</a>
+  <!-- Instagram -->
+  <a href="https://instagram.com/" target="_blank"
+     class="group relative w-12 h-12 flex items-center justify-center rounded-full 
+            bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200 
+            shadow-md hover:shadow-amber-300/70 transition-all duration-300 hover:scale-110">
+    <i data-lucide="instagram" class="w-6 h-6 text-[#E4405F] group-hover:text-[#C13584] transition"></i>
+    <span class="absolute -bottom-7 text-xs text-[#E4405F] font-semibold opacity-0 group-hover:opacity-100 transition">
+      Instagram
+    </span>
+  </a>
 
-<!-- YouTube -->
-<a href="https://youtube.com/@lorddhanvantri3009" target="_blank"
-class="group relative w-12 h-12 flex items-center justify-center rounded-full 
-           bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200 
-           shadow-md hover:shadow-amber-300/70 transition-all duration-300 hover:scale-110">
-<i data-lucide="youtube" class="w-6 h-6 text-[#FF0000] group-hover:text-[#cc0000] transition"></i>
-<span class="absolute -bottom-7 text-xs text-[#FF0000] font-semibold opacity-0 group-hover:opacity-100 transition">
-YouTube
-</span>
-</a>
+  <!-- YouTube -->
+  <a href="https://youtube.com/@lorddhanvantri3009" target="_blank"
+     class="group relative w-12 h-12 flex items-center justify-center rounded-full 
+            bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200 
+            shadow-md hover:shadow-amber-300/70 transition-all duration-300 hover:scale-110">
+    <i data-lucide="youtube" class="w-6 h-6 text-[#FF0000] group-hover:text-[#cc0000] transition"></i>
+    <span class="absolute -bottom-7 text-xs text-[#FF0000] font-semibold opacity-0 group-hover:opacity-100 transition">
+      YouTube
+    </span>
+  </a>
 
-<!-- WhatsApp -->
-<a href="https://wa.me/919902105637" target="_blank"
-class="group relative w-12 h-12 flex items-center justify-center rounded-full 
-           bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200 
-           shadow-md hover:shadow-amber-300/70 transition-all duration-300 hover:scale-110">
-<i data-lucide="message-circle" class="w-6 h-6 text-[#25D366] group-hover:text-[#128C7E] transition"></i>
-<span class="absolute -bottom-7 text-xs text-[#25D366] font-semibold opacity-0 group-hover:opacity-100 transition">
-WhatsApp
-</span>
-</a>
+  <!-- WhatsApp -->
+  <a href="https://wa.me/919902105637" target="_blank"
+     class="group relative w-12 h-12 flex items-center justify-center rounded-full 
+            bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-200 
+            shadow-md hover:shadow-amber-300/70 transition-all duration-300 hover:scale-110">
+    <i data-lucide="message-circle" class="w-6 h-6 text-[#25D366] group-hover:text-[#128C7E] transition"></i>
+    <span class="absolute -bottom-7 text-xs text-[#25D366] font-semibold opacity-0 group-hover:opacity-100 transition">
+      WhatsApp
+    </span>
+  </a>
 </div>
 
 <!-- Lucide Icons Library -->
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>
-lucide.createIcons();
+  lucide.createIcons();
 </script>
 
-<div class="mt-6 mx-auto w-24 h-0.5 bg-gradient-to-r from-amber-300 to-amber-600 rounded-full opacity-70"></div>
-<p class="mt-4 text-xs text-slate-600">© 2025 <span class="font-semibold text-amber-800">Shree Lord Dhanvantari Temple</span> • Built with devotion 💛</p>
+  <div class="mt-6 mx-auto w-24 h-0.5 bg-gradient-to-r from-amber-300 to-amber-600 rounded-full opacity-70"></div>
+  <p class="mt-4 text-xs text-slate-600">© 2025 <span class="font-semibold text-amber-800">Shree Lord Dhanvantari Temple</span> • Built with devotion 💛</p>
 </footer>
 
 <!-- ===== MODAL ===== -->
 <div id="modal" class="fixed inset-0 hidden z-50 flex items-center justify-center">
-<div class="absolute inset-0 bg-black/50" onclick="closeModal()"></div>
-<div id="modalPanel" class="relative bg-white rounded-2xl max-w-lg w-[92%] p-6 shadow-lg z-10"></div>
+  <div class="absolute inset-0 bg-black/50" onclick="closeModal()"></div>
+  <div id="modalPanel" class="relative bg-white rounded-2xl max-w-lg w-[92%] p-6 shadow-lg z-10"></div>
 </div>
 
 <!-- ===== SCRIPTS ===== -->
@@ -1159,87 +1165,87 @@ const header = document.querySelector('header');
 
 // Toggle open/close
 menuBtn.addEventListener('click', (e) => {
-e.stopPropagation();
-mobileMenu.classList.toggle('hidden');
+  e.stopPropagation();
+  mobileMenu.classList.toggle('hidden');
 });
 
 // Close when clicking outside
 document.addEventListener('click', (e) => {
-if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
-mobileMenu.classList.add('hidden');
-}
+  if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+    mobileMenu.classList.add('hidden');
+  }
 });
 
 // 🌸 Smooth scroll & center target section
 mobileLinks.forEach(link => {
-link.addEventListener('click', (e) => {
-e.preventDefault();
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
 
-const targetId = link.getAttribute('href');
-const targetEl = document.querySelector(targetId);
-if (!targetEl) return;
+    const targetId = link.getAttribute('href');
+    const targetEl = document.querySelector(targetId);
+    if (!targetEl) return;
 
-// Close menu
-mobileMenu.classList.add('hidden');
+    // Close menu
+    mobileMenu.classList.add('hidden');
 
-// Wait a little before scrolling (for smoother UX)
-setTimeout(() => {
-const headerHeight = header ? header.offsetHeight : 80;
-const viewportHeight = window.innerHeight;
-const elementTop = targetEl.getBoundingClientRect().top + window.scrollY;
-const elementHeight = targetEl.offsetHeight;
+    // Wait a little before scrolling (for smoother UX)
+    setTimeout(() => {
+      const headerHeight = header ? header.offsetHeight : 80;
+      const viewportHeight = window.innerHeight;
+      const elementTop = targetEl.getBoundingClientRect().top + window.scrollY;
+      const elementHeight = targetEl.offsetHeight;
 
-// Compute scroll position so the section is centered in the viewport
-let scrollY =
-elementTop -
-(viewportHeight / 2 - elementHeight / 2) -
-headerHeight / 3;
+      // Compute scroll position so the section is centered in the viewport
+      let scrollY =
+        elementTop -
+        (viewportHeight / 2 - elementHeight / 2) -
+        headerHeight / 3;
 
-// Clamp: never scroll negative
-if (scrollY < 0) scrollY = 0;
+      // Clamp: never scroll negative
+      if (scrollY < 0) scrollY = 0;
 
-window.scrollTo({
-top: scrollY,
-behavior: "smooth",
-});
-}, 250);
-});
+      window.scrollTo({
+        top: scrollY,
+        behavior: "smooth",
+      });
+    }, 250);
+  });
 });
 
 
 /* 🌸 Manual Scroll Setup (no auto scroll) */
 function setupScroll(containerSel, dotsSel) {
-const container = document.querySelector(containerSel);
-const dots = document.querySelectorAll(dotsSel + ' .dot');
-if (!container || !dots.length) return;
+  const container = document.querySelector(containerSel);
+  const dots = document.querySelectorAll(dotsSel + ' .dot');
+  if (!container || !dots.length) return;
+  
+  let index = 0;
+  function updateDots() {
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+  }
+  function scrollToIndex(i) {
+    container.scrollTo({ left: i * container.clientWidth, behavior: 'smooth' });
+  }
 
-let index = 0;
-function updateDots() {
-dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
-}
-function scrollToIndex(i) {
-container.scrollTo({ left: i * container.clientWidth, behavior: 'smooth' });
-}
+  // Manual dot click
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      index = i;
+      scrollToIndex(i);
+      updateDots();
+    });
+  });
 
-// Manual dot click
-dots.forEach((dot, i) => {
-dot.addEventListener('click', () => {
-index = i;
-scrollToIndex(i);
-updateDots();
-});
-});
+  // Sync dots when user scrolls manually
+  container.addEventListener('scroll', () => {
+    const current = Math.round(container.scrollLeft / container.clientWidth);
+    if (current !== index) {
+      index = current;
+      updateDots();
+    }
+  });
 
-// Sync dots when user scrolls manually
-container.addEventListener('scroll', () => {
-const current = Math.round(container.scrollLeft / container.clientWidth);
-if (current !== index) {
-index = current;
-updateDots();
-}
-});
-
-window.addEventListener('resize', () => scrollToIndex(index));
+  window.addEventListener('resize', () => scrollToIndex(index));
 }
 
 /* ✅ Apply to all scrollable sections */
@@ -1250,47 +1256,47 @@ setupScroll('#videoScroll', '#videoDots');
 
 /* Welcome fade-out */
 window.addEventListener('load',()=>{const o=document.getElementById('welcomeOverlay');
-setTimeout(()=>o.classList.add('hidden'),4000);
-setTimeout(()=>o.remove(),6000);
+  setTimeout(()=>o.classList.add('hidden'),4000);
+  setTimeout(()=>o.remove(),6000);
 });
 
 /* Countdown
 const eventDate=new Date("January 13 2026 00:00:00").getTime();
 const el=document.getElementById("vardhantuCounter");
 function updateCountdown(){
- const now=Date.now(),dist=eventDate-now;
- if(dist<0){el.textContent="🌼 The celebration day has arrived! 🌼";return;}
- const d=Math.floor(dist/(1000*60*60*24));
- const h=Math.floor((dist%(1000*60*60*24))/(1000*60*60));
- el.innerHTML=`🕒 <span class="text-amber-800">${d}</span> days <span class="text-amber-700">${h}</span> hours remaining`;
+  const now=Date.now(),dist=eventDate-now;
+  if(dist<0){el.textContent="🌼 The celebration day has arrived! 🌼";return;}
+  const d=Math.floor(dist/(1000*60*60*24));
+  const h=Math.floor((dist%(1000*60*60*24))/(1000*60*60));
+  el.innerHTML=`🕒 <span class="text-amber-800">${d}</span> days <span class="text-amber-700">${h}</span> hours remaining`;
 }
 setInterval(updateCountdown,1000);updateCountdown(); */
 
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
 
 function setupImagePreview(sectionSelector) {
-const images = document.querySelectorAll(`${sectionSelector} .scroll-item`);
-const modal = document.getElementById('modal');
-const panel = document.getElementById('modalPanel');
+  const images = document.querySelectorAll(`${sectionSelector} .scroll-item`);
+  const modal = document.getElementById('modal');
+  const panel = document.getElementById('modalPanel');
 
-if (!images.length || !modal || !panel) return;
+  if (!images.length || !modal || !panel) return;
 
-images.forEach(img => {
-img.addEventListener('click', () => {
-panel.innerHTML = `
-       <div class="text-center">
-         <img src="${img.src}" alt="Enlarged Image" 
-              class="rounded-xl w-full h-auto object-contain max-h-[80vh] mx-auto shadow-lg">
-         <div class="mt-4">
-           <button onclick="closeModal()" 
-                   class="rounded-md px-4 py-2 bg-amber-50 text-amber-800 font-semibold hover:bg-amber-100 transition">
-             ✕ Close
-           </button>
-         </div>
-       </div>`;
-modal.classList.remove('hidden');
-});
-});
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      panel.innerHTML = `
+        <div class="text-center">
+          <img src="${img.src}" alt="Enlarged Image" 
+               class="rounded-xl w-full h-auto object-contain max-h-[80vh] mx-auto shadow-lg">
+          <div class="mt-4">
+            <button onclick="closeModal()" 
+                    class="rounded-md px-4 py-2 bg-amber-50 text-amber-800 font-semibold hover:bg-amber-100 transition">
+              ✕ Close
+            </button>
+          </div>
+        </div>`;
+      modal.classList.remove('hidden');
+    });
+  });
 }
 
 /* ✅ Apply to both galleries */
@@ -1299,127 +1305,127 @@ setupImagePreview('#festivals');
 
 /* 🌸 Smooth fade-out sequence */
 window.addEventListener('load', () => {
-const overlay = document.getElementById('welcomeOverlay');
-// Wait 4 seconds, then fade it out gradually
-setTimeout(() => {
-overlay.classList.add('fade-out');
-}, 4000);
-// Remove it completely after fade ends
-setTimeout(() => {
-overlay.remove();
-}, 7000);
+  const overlay = document.getElementById('welcomeOverlay');
+  // Wait 4 seconds, then fade it out gradually
+  setTimeout(() => {
+    overlay.classList.add('fade-out');
+  }, 4000);
+  // Remove it completely after fade ends
+  setTimeout(() => {
+    overlay.remove();
+  }, 7000);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-// 🌿 === Generic Modal Setup ===
-const setupModal = (btnId, modalId, closeId, onClose) => {
-const btn = document.getElementById(btnId);
-const modal = document.getElementById(modalId);
-const close = document.getElementById(closeId);
-if (!btn || !modal || !close) return;
+  // 🌿 === Generic Modal Setup ===
+  const setupModal = (btnId, modalId, closeId, onClose) => {
+    const btn = document.getElementById(btnId);
+    const modal = document.getElementById(modalId);
+    const close = document.getElementById(closeId);
+    if (!btn || !modal || !close) return;
 
-// Open modal
-btn.addEventListener("click", () => {
-modal.classList.remove("hidden");
-document.body.style.overflow = "hidden";
-});
+    // Open modal
+    btn.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    });
 
-// Close modal
-const closeModal = () => {
-modal.classList.add("hidden");
-document.body.style.overflow = "auto";
-if (onClose) onClose();
-};
+    // Close modal
+    const closeModal = () => {
+      modal.classList.add("hidden");
+      document.body.style.overflow = "auto";
+      if (onClose) onClose();
+    };
 
-close.addEventListener("click", closeModal);
-modal.addEventListener("click", (e) => {
-if (e.target === modal) closeModal();
-});
+    close.addEventListener("click", closeModal);
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeModal();
+    });
 
-// ESC key close
-document.addEventListener("keydown", (e) => {
-if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-closeModal();
-}
-});
-};
+    // ESC key close
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+        closeModal();
+      }
+    });
+  };
 
-// ✅ Setup Photo Gallery & Festival modals
-setupModal("viewMoreGallery", "galleryModal", "closeGalleryModal");
-setupModal("viewMoreFestivals", "festivalModal", "closeFestivalModal");
+  // ✅ Setup Photo Gallery & Festival modals
+  setupModal("viewMoreGallery", "galleryModal", "closeGalleryModal");
+  setupModal("viewMoreFestivals", "festivalModal", "closeFestivalModal");
 
-// ✅ Setup Video modal (with autoplay stop on close)
-setupModal("viewMoreVideos", "videoModal", "closeVideoModal", () => {
-const videoModal = document.getElementById("videoModal");
-if (videoModal) {
-const iframes = videoModal.querySelectorAll("iframe");
-iframes.forEach((iframe) => (iframe.src = iframe.src)); // stop playback
-}
-});
+  // ✅ Setup Video modal (with autoplay stop on close)
+  setupModal("viewMoreVideos", "singleVideoModal", "closeVideoModal", () => {
+    const videoModal = document.getElementById("singleVideoModal");
+    if (videoModal) {
+      const iframes = videoModal.querySelectorAll("iframe");
+      iframes.forEach((iframe) => (iframe.src = iframe.src)); // stop playback
+    }
+  });
 
-// 🌸 === Lightbox Setup (shared for gallery + festivals) ===
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightboxImg");
-const closeLightbox = document.getElementById("closeLightbox");
-const nextBtn = document.getElementById("nextBtn");
-const prevBtn = document.getElementById("prevBtn");
+  // 🌸 === Lightbox Setup (shared for gallery + festivals) ===
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+  const closeLightbox = document.getElementById("closeLightbox");
+  const nextBtn = document.getElementById("nextBtn");
+  const prevBtn = document.getElementById("prevBtn");
 
-let currentIndex = 0;
-let currentImages = [];
+  let currentIndex = 0;
+  let currentImages = [];
 
-// Open Lightbox
-const openLightbox = (images, index) => {
-currentImages = images;
-currentIndex = index;
-lightboxImg.src = images[currentIndex].src;
-lightbox.classList.remove("hidden");
-document.body.style.overflow = "hidden";
-};
+  // Open Lightbox
+  const openLightbox = (images, index) => {
+    currentImages = images;
+    currentIndex = index;
+    lightboxImg.src = images[currentIndex].src;
+    lightbox.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  };
 
-// Navigation
-const showNext = () => {
-currentIndex = (currentIndex + 1) % currentImages.length;
-lightboxImg.src = currentImages[currentIndex].src;
-};
+  // Navigation
+  const showNext = () => {
+    currentIndex = (currentIndex + 1) % currentImages.length;
+    lightboxImg.src = currentImages[currentIndex].src;
+  };
 
-const showPrev = () => {
-currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
-lightboxImg.src = currentImages[currentIndex].src;
-};
+  const showPrev = () => {
+    currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+    lightboxImg.src = currentImages[currentIndex].src;
+  };
 
-// Close & navigation buttons
-[nextBtn, prevBtn, closeLightbox].forEach((btn) =>
-btn.addEventListener("click", (e) => {
-e.stopPropagation();
-if (btn === closeLightbox) {
-lightbox.classList.add("hidden");
-document.body.style.overflow = "auto";
-}
-if (btn === nextBtn) showNext();
-if (btn === prevBtn) showPrev();
-})
-);
+  // Close & navigation buttons
+  [nextBtn, prevBtn, closeLightbox].forEach((btn) =>
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (btn === closeLightbox) {
+        lightbox.classList.add("hidden");
+        document.body.style.overflow = "auto";
+      }
+      if (btn === nextBtn) showNext();
+      if (btn === prevBtn) showPrev();
+    })
+  );
 
-// Keyboard shortcuts
-document.addEventListener("keydown", (e) => {
-if (lightbox.classList.contains("hidden")) return;
-if (e.key === "Escape") {
-lightbox.classList.add("hidden");
-document.body.style.overflow = "auto";
-}
-if (e.key === "ArrowRight") showNext();
-if (e.key === "ArrowLeft") showPrev();
-});
+  // Keyboard shortcuts
+  document.addEventListener("keydown", (e) => {
+    if (lightbox.classList.contains("hidden")) return;
+    if (e.key === "Escape") {
+      lightbox.classList.add("hidden");
+      document.body.style.overflow = "auto";
+    }
+    if (e.key === "ArrowRight") showNext();
+    if (e.key === "ArrowLeft") showPrev();
+  });
 
-// ✅ Attach Lightbox to both modals
-["galleryGrid", "festivalGrid"].forEach((gridId) => {
-const grid = document.getElementById(gridId);
-if (!grid) return;
-const imgs = grid.querySelectorAll("img");
-imgs.forEach((img, i) => {
-img.addEventListener("click", () => openLightbox(imgs, i));
-});
-});
+  // ✅ Attach Lightbox to both modals
+  ["galleryGrid", "festivalGrid"].forEach((gridId) => {
+    const grid = document.getElementById(gridId);
+    if (!grid) return;
+    const imgs = grid.querySelectorAll("img");
+    imgs.forEach((img, i) => {
+      img.addEventListener("click", () => openLightbox(imgs, i));
+    });
+  });
 });
 
 </script>
@@ -1432,170 +1438,171 @@ let youtubePlayers = [];
 
 // Initialize YouTube players
 function onYouTubeIframeAPIReady() {
-const iframes = document.querySelectorAll('#videoGrid iframe');
-iframes.forEach((iframe) => {
-const player = new YT.Player(iframe, {
-events: {
-'onStateChange': (event) => {
-// When a YouTube video starts playing
-if (event.data === YT.PlayerState.PLAYING) {
-stopOtherVideos(player);
-}
-}
-}
-});
-youtubePlayers.push(player);
-});
+  const iframes = document.querySelectorAll('#videoGrid iframe');
+  iframes.forEach((iframe) => {
+    const player = new YT.Player(iframe, {
+      events: {
+        'onStateChange': (event) => {
+          // When a YouTube video starts playing
+          if (event.data === YT.PlayerState.PLAYING) {
+            stopOtherVideos(player);
+          }
+        }
+      }
+    });
+    youtubePlayers.push(player);
+  });
 }
 
 // Stop all other videos except the one playing
 function stopOtherVideos(activePlayer = null) {
-// Stop YouTube videos except the current one
-youtubePlayers.forEach((p) => {
-if (p !== activePlayer && p.stopVideo) {
-p.stopVideo();
-}
-});
+  // Stop YouTube videos except the current one
+  youtubePlayers.forEach((p) => {
+    if (p !== activePlayer && p.stopVideo) {
+      p.stopVideo();
+    }
+  });
 
-// Pause all HTML5 videos
-document.querySelectorAll('#videoGrid video').forEach((v) => {
-// Only pause if it’s not the currently playing one
-if (v !== activePlayer) v.pause();
-});
+  // Pause all HTML5 videos
+  document.querySelectorAll('#videoGrid video').forEach((v) => {
+    // Only pause if it’s not the currently playing one
+    if (v !== activePlayer) v.pause();
+  });
 }
 
 // Listen for local video play events
 document.addEventListener('play', (e) => {
-if (e.target.tagName === 'VIDEO') {
-stopOtherVideos(e.target);
-}
+  if (e.target.tagName === 'VIDEO') {
+    stopOtherVideos(e.target);
+  }
 }, true);
 
 // Stop all videos (used when modal closes)
 function stopAllVideos() {
-youtubePlayers.forEach((p) => p.stopVideo && p.stopVideo());
-document.querySelectorAll('#videoGrid video').forEach((v) => v.pause());
+  youtubePlayers.forEach((p) => p.stopVideo && p.stopVideo());
+  document.querySelectorAll('#videoGrid video').forEach((v) => v.pause());
 }
 
 // Stop videos when modal closes
 document.addEventListener('DOMContentLoaded', () => {
 const closeBtn = document.getElementById('closeVideoModal');
-const modal = document.getElementById('videoModal');
-if (closeBtn && modal) {
-closeBtn.addEventListener('click', () => {
-stopAllVideos();
-modal.classList.add('hidden');
-});
-}
-});
-</script>
+const modal = document.getElementById('singleVideoModal');
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-const eventText = document.getElementById("eventText");
-
-// 🌼 Kannada event list (rotating)
-const events = [
-"🪷 <span class='font-bold text-yellow-200'>ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮ:</span> <span class='font-extrabold text-[#fff8e1]'>ಕಾರ್ತಿಕ ದೀಪೋತ್ಸವ</span> — ನವೆಂಬರ್ 20, 2025 🪔",
-"🌸 <span class='font-bold text-yellow-200'>ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮ:</span> <span class='font-extrabold text-[#fff8e1]'>ವರ್ಧಂತ್ಯುಸ್ತವ</span> — ಜನವರಿ 13, 2026 🌸",
-"🪷 <span class='font-bold text-yellow-200'>Upcoming event:</span> <span class='font-extrabold text-[#fff8e1]'>Kartika Deepotsava</span> — November 20, 2025 🪔",
-"🌸 <span class='font-bold text-yellow-200'>Upcoming event:</span> <span class='font-extrabold text-[#fff8e1]'>Vardhantyustava</span> — January 13, 2026 🌸"
-];
-
-let i = 0;
-setInterval(() => {
-eventText.classList.add("opacity-0");
-setTimeout(() => {
-i = (i + 1) % events.length;
-eventText.innerHTML = events[i];
-eventText.classList.remove("opacity-0");
-}, 600);
-}, 4000);
+  if (closeBtn && modal) {
+    closeBtn.addEventListener('click', () => {
+      stopAllVideos();
+      modal.classList.add('hidden');
+    });
+  }
 });
 </script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-const scrollContainer = document.getElementById("event-scroll");
-const dotsContainer = document.getElementById("eventDots");
-if (!scrollContainer || !dotsContainer) return;
+  const eventText = document.getElementById("eventText");
 
-const cards = [...scrollContainer.children];
+  // 🌼 Kannada event list (rotating)
+  const events = [
+    "🪷 <span class='font-bold text-yellow-200'>ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮ:</span> <span class='font-extrabold text-[#fff8e1]'>ಕಾರ್ತಿಕ ದೀಪೋತ್ಸವ</span> — ನವೆಂಬರ್ 20, 2025 🪔",
+    "🌸 <span class='font-bold text-yellow-200'>ಮುಂಬರುವ ಕಾರ್ಯಕ್ರಮ:</span> <span class='font-extrabold text-[#fff8e1]'>ವರ್ಧಂತ್ಯುಸ್ತವ</span> — ಜನವರಿ 13, 2026 🌸",
+    "🪷 <span class='font-bold text-yellow-200'>Upcoming event:</span> <span class='font-extrabold text-[#fff8e1]'>Kartika Deepotsava</span> — November 20, 2025 🪔",
+    "🌸 <span class='font-bold text-yellow-200'>Upcoming event:</span> <span class='font-extrabold text-[#fff8e1]'>Vardhantyustava</span> — January 13, 2026 🌸"
+  ];
 
-// 🟡 Create one dot per card
-dotsContainer.innerHTML = "";
-const dots = cards.map((_, i) => {
-const dot = document.createElement("div");
-dot.className =
-"w-3 h-3 rounded-full bg-amber-300 cursor-pointer transition-all duration-300";
-dot.addEventListener("click", () => {
-scrollContainer.scrollTo({
-left: i * scrollContainer.clientWidth,
-behavior: "smooth",
+  let i = 0;
+  setInterval(() => {
+    eventText.classList.add("opacity-0");
+    setTimeout(() => {
+      i = (i + 1) % events.length;
+      eventText.innerHTML = events[i];
+      eventText.classList.remove("opacity-0");
+    }, 600);
+  }, 4000);
 });
-setActiveDot(i);
-});
-dotsContainer.appendChild(dot);
-return dot;
-});
+</script>
 
-function setActiveDot(index) {
-dots.forEach((dot, i) => {
-dot.classList.toggle("bg-amber-600", i === index);
-dot.classList.toggle("scale-125", i === index);
-dot.classList.toggle("shadow-md", i === index);
-});
-}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollContainer = document.getElementById("event-scroll");
+  const dotsContainer = document.getElementById("eventDots");
+  if (!scrollContainer || !dotsContainer) return;
 
-// 🪶 Update dots while scrolling
-function updateDots() {
-const scrollLeft = scrollContainer.scrollLeft;
-const cardWidth = scrollContainer.clientWidth;
-const activeIndex = Math.round(scrollLeft / cardWidth);
-setActiveDot(activeIndex);
-}
+  const cards = [...scrollContainer.children];
 
-scrollContainer.addEventListener("scroll", () =>
-requestAnimationFrame(updateDots)
-);
+  // 🟡 Create one dot per card
+  dotsContainer.innerHTML = "";
+  const dots = cards.map((_, i) => {
+    const dot = document.createElement("div");
+    dot.className =
+      "w-3 h-3 rounded-full bg-amber-300 cursor-pointer transition-all duration-300";
+    dot.addEventListener("click", () => {
+      scrollContainer.scrollTo({
+        left: i * scrollContainer.clientWidth,
+        behavior: "smooth",
+      });
+      setActiveDot(i);
+    });
+    dotsContainer.appendChild(dot);
+    return dot;
+  });
 
-// Set initial active dot
-setActiveDot(0);
+  function setActiveDot(index) {
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("bg-amber-600", i === index);
+      dot.classList.toggle("scale-125", i === index);
+      dot.classList.toggle("shadow-md", i === index);
+    });
+  }
+
+  // 🪶 Update dots while scrolling
+  function updateDots() {
+    const scrollLeft = scrollContainer.scrollLeft;
+    const cardWidth = scrollContainer.clientWidth;
+    const activeIndex = Math.round(scrollLeft / cardWidth);
+    setActiveDot(activeIndex);
+  }
+
+  scrollContainer.addEventListener("scroll", () =>
+    requestAnimationFrame(updateDots)
+  );
+
+  // Set initial active dot
+  setActiveDot(0);
 });
 </script>
 
 <script>
 /* === MULTIPLE EVENT COUNTDOWNS === */
 const events = [
-{ id: "vardhantuCounter1", date: "November 20, 2025 00:00:00", name: "Kartika Deepotsava" },
-{ id: "vardhantuCounter2", date: "January 11, 2026 00:00:00", name: "Vardhantyustava" }
+  { id: "vardhantuCounter1", date: "November 20, 2025 00:00:00", name: "Kartika Deepotsava" },
+  { id: "vardhantuCounter2", date: "January 11, 2026 00:00:00", name: "Vardhantyustava" }
 ];
 
 function updateCountdowns() {
-const now = new Date().getTime();
+  const now = new Date().getTime();
 
-events.forEach(event => {
-const el = document.getElementById(event.id);
-if (!el) return;
+  events.forEach(event => {
+    const el = document.getElementById(event.id);
+    if (!el) return;
 
-const eventDate = new Date(event.date).getTime();
-const diff = eventDate - now;
+    const eventDate = new Date(event.date).getTime();
+    const diff = eventDate - now;
 
-if (diff <= 0) {
-el.innerHTML = `🌼 The day of <span class="text-amber-800 font-semibold">${event.name}</span> has arrived! 🌼`;
-return;
-}
+    if (diff <= 0) {
+      el.innerHTML = `🌼 The day of <span class="text-amber-800 font-semibold">${event.name}</span> has arrived! 🌼`;
+      return;
+    }
 
-const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 
-el.innerHTML = `
- <span class="text-amber-700 font-semibold">🕒 Coming in next</span>
- <span class="text-amber-900 font-bold">${days}</span> days
+    el.innerHTML = `
+  <span class="text-amber-700 font-semibold">🕒 Coming in next</span>
+  <span class="text-amber-900 font-bold">${days}</span> days
 `;
 
-});
+  });
 }
 
 updateCountdowns();
@@ -1605,8 +1612,8 @@ setInterval(updateCountdowns, 60000); // update every 1 minute
 
 <script>
 function createWhatsAppLink(sevaName) {
-const phone = "919902105637"; // Temple WhatsApp number (with country code)
-const message = `🙏 Namaskara,
+  const phone = "919902105637"; // Temple WhatsApp number (with country code)
+  const message = `🙏 Namaskara,
 I have made a seva offering for *${sevaName}*.
 Here are my details:
 
@@ -1621,84 +1628,82 @@ Here are my details:
 Please confirm my seva booking.
 Thank you. 🙏`;
 
-return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }
 
 function openSevaModal(type, amount) {
-const sevaNames = {
-seva1: "ಶಾಶ್ವತ ಪೂಜಾ ಸೇವಾನಿಧಿ / Permanent Pooja Endowment",
-seva2: "ಕಲ್ಪೋಕ್ತ ಪೂಜೆ / One-day Kalpokta Pooja",
-seva3: "ಶಾಶ್ವತ ಪೂಜಾ ನಿಧಿ (ವೈಯಕ್ತಿಕ) / Personal Endowment Pooja",
-seva4: "ಸಾಮೂಹಿಕ ವಾರ್ಷಿಕ ಪೂಜೆ / Annual Collective Pooja",
-seva5: "ಸರ್ವ ಸೇವೆ / Sarva Seva (All-inclusive Pooja)",
-seva6: "ಜನ್ಮ ನಕ್ಷತ್ರ ಪೂಜೆ / Janma Nakshatra Pooja",
-};
+  const sevaNames = {
+    seva1: "ಶಾಶ್ವತ ಪೂಜಾ ಸೇವಾನಿಧಿ / Permanent Pooja Endowment",
+    seva2: "ಕಲ್ಪೋಕ್ತ ಪೂಜೆ / One-day Kalpokta Pooja",
+    seva3: "ಶಾಶ್ವತ ಪೂಜಾ ನಿಧಿ (ವೈಯಕ್ತಿಕ) / Personal Endowment Pooja",
+    seva4: "ಸಾಮೂಹಿಕ ವಾರ್ಷಿಕ ಪೂಜೆ / Annual Collective Pooja",
+    seva5: "ಸರ್ವ ಸೇವೆ / Sarva Seva (All-inclusive Pooja)",
+    seva6: "ಜನ್ಮ ನಕ್ಷತ್ರ ಪೂಜೆ / Janma Nakshatra Pooja",
+  };
 
-const sevaName = sevaNames[type] || "Temple Seva Offering";
-const encodedNote = encodeURIComponent(`Offering for ${sevaName}`);
-  const upiUrl = `upi://pay?pa=9902105637@upi&pn=ShreeDhanvantariTemple&am=${amount}&cu=INR&tn=${encodedNote}`;
+  const sevaName = sevaNames[type] || "Temple Seva Offering";
+  const encodedNote = encodeURIComponent(`Offering for ${sevaName}`);
   const upiUrl = `upi://pay?pa=9902105637@ybl&pn=ShreeDhanvantariTemple&am=${amount}&cu=INR&tn=${encodedNote}`;
-const whatsappUrl = createWhatsAppLink(sevaName);
+  const whatsappUrl = createWhatsAppLink(sevaName);
 
-const panel = document.getElementById("modalPanel");
-panel.innerHTML = `
-   <div class="text-center animate-fadeIn">
-     <h3 class="text-2xl md:text-3xl font-extrabold text-amber-800 mb-3">${sevaName}</h3>
-     <p class="text-lg md:text-xl font-bold text-amber-700 mb-4">
-       💰 Seva Amount: <span class="text-amber-900">₹${amount.toLocaleString()}</span>
-     </p>
+  const panel = document.getElementById("modalPanel");
+  panel.innerHTML = `
+    <div class="text-center animate-fadeIn">
+      <h3 class="text-2xl md:text-3xl font-extrabold text-amber-800 mb-3">${sevaName}</h3>
+      <p class="text-lg md:text-xl font-bold text-amber-700 mb-4">
+        💰 Seva Amount: <span class="text-amber-900">₹${amount.toLocaleString()}</span>
+      </p>
 
-     <div class="bg-gradient-to-b from-amber-50 to-yellow-50 border border-amber-200 rounded-2xl shadow-md p-5 mx-auto w-fit">
-       <img src="images/qrcode/qrcode.png" alt="Temple UPI QR"
-            class="w-44 h-44 mx-auto object-contain rounded-xl shadow-md border border-amber-100 p-2 bg-white">
-       <p class="mt-3 text-base font-semibold text-amber-800">
-         Scan this QR code to pay ₹${amount.toLocaleString()}
-       </p>
-       <p class="text-sm text-slate-700">
-          UPI ID: <span class="font-bold text-amber-800">9902105637</span>
+      <div class="bg-gradient-to-b from-amber-50 to-yellow-50 border border-amber-200 rounded-2xl shadow-md p-5 mx-auto w-fit">
+        <img src="images/qrcode/qrcode.png" alt="Temple UPI QR"
+             class="w-44 h-44 mx-auto object-contain rounded-xl shadow-md border border-amber-100 p-2 bg-white">
+        <p class="mt-3 text-base font-semibold text-amber-800">
+          Scan this QR code to pay ₹${amount.toLocaleString()}
+        </p>
+        <p class="text-sm text-slate-700">
           UPI ID: <span class="font-bold text-amber-800">9902105637@ybl</span>
-       </p>
-     </div>
+        </p>
+      </div>
 
-     <a href="${upiUrl}" 
-        class="mt-5 inline-block px-6 py-3 rounded-full font-semibold text-white
-               bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400
-               shadow-md hover:shadow-amber-300/60 hover:scale-105 transition">
-       💳 Pay ₹${amount.toLocaleString()} via UPI App
-     </a>
+      <a href="${upiUrl}" 
+         class="mt-5 inline-block px-6 py-3 rounded-full font-semibold text-white
+                bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400
+                shadow-md hover:shadow-amber-300/60 hover:scale-105 transition">
+        💳 Pay ₹${amount.toLocaleString()} via UPI App
+      </a>
 
-     <!-- 🌿 WhatsApp Button -->
-     <a href="${whatsappUrl}" target="_blank"
-        class="mt-4 inline-block px-6 py-3 rounded-full font-semibold text-white
-               bg-[#25D366] hover:bg-[#1EBE5D] shadow-md hover:scale-105 transition">
-       💬 Send Details via WhatsApp
-     </a>
+      <!-- 🌿 WhatsApp Button -->
+      <a href="${whatsappUrl}" target="_blank"
+         class="mt-4 inline-block px-6 py-3 rounded-full font-semibold text-white
+                bg-[#25D366] hover:bg-[#1EBE5D] shadow-md hover:scale-105 transition">
+        💬 Send Details via WhatsApp
+      </a>
 
-     <p class="mt-4 text-sm text-slate-600 italic">
-       Kindly mention your <b>name</b> and <b>seva name</b> in payment remarks (pre-filled as “Offering for ${sevaName}”).
-     </p>
+      <p class="mt-4 text-sm text-slate-600 italic">
+        Kindly mention your <b>name</b> and <b>seva name</b> in payment remarks (pre-filled as “Offering for ${sevaName}”).
+      </p>
 
-     <div class="mt-6">
-       <button onclick="closeModal()" 
-               class="px-6 py-2 rounded-full bg-amber-50 text-amber-800 font-semibold 
-                      hover:bg-amber-100 border border-amber-200 shadow-sm transition">
-         ✕ Close
-       </button>
-     </div>
-   </div>
- `;
+      <div class="mt-6">
+        <button onclick="closeModal()" 
+                class="px-6 py-2 rounded-full bg-amber-50 text-amber-800 font-semibold 
+                       hover:bg-amber-100 border border-amber-200 shadow-sm transition">
+          ✕ Close
+        </button>
+      </div>
+    </div>
+  `;
 
-// ✅ Show modal
-document.getElementById("modal").classList.remove("hidden");
-document.body.style.overflow = "hidden";
+  // ✅ Show modal
+  document.getElementById("modal").classList.remove("hidden");
+  document.body.style.overflow = "hidden";
 }
 
 function closeModal() {
-const modal = document.getElementById("modal");
-const panel = document.getElementById("modalPanel");
-modal.classList.add("hidden");
-panel.innerHTML = "";
-document.body.style.overflow = "auto";
+  const modal = document.getElementById("modal");
+  const panel = document.getElementById("modalPanel");
+  modal.classList.add("hidden");
+  panel.innerHTML = "";
+  document.body.style.overflow = "auto";
 }
 </script>
 
@@ -1707,77 +1712,77 @@ document.body.style.overflow = "auto";
 <!-- Dots Script -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-const container = document.getElementById("seva-scroll");
-const dotsContainer = document.getElementById("seva-dots");
-if (!container || !dotsContainer) return;
+  const container = document.getElementById("seva-scroll");
+  const dotsContainer = document.getElementById("seva-dots");
+  if (!container || !dotsContainer) return;
 
-const cards = container.querySelectorAll(".snap-center");
-dotsContainer.innerHTML = "";
+  const cards = container.querySelectorAll(".snap-center");
+  dotsContainer.innerHTML = "";
 
-cards.forEach((_, i) => {
-const dot = document.createElement("div");
-dot.className = "w-3 h-3 rounded-full bg-amber-300 transition-all duration-300 cursor-pointer";
-dotsContainer.appendChild(dot);
-dot.addEventListener("click", () => {
-container.scrollTo({ left: i * container.clientWidth, behavior: "smooth" });
-setActiveDot(i);
-});
-});
+  cards.forEach((_, i) => {
+    const dot = document.createElement("div");
+    dot.className = "w-3 h-3 rounded-full bg-amber-300 transition-all duration-300 cursor-pointer";
+    dotsContainer.appendChild(dot);
+    dot.addEventListener("click", () => {
+      container.scrollTo({ left: i * container.clientWidth, behavior: "smooth" });
+      setActiveDot(i);
+    });
+  });
 
-const dots = [...dotsContainer.children];
-function setActiveDot(index) {
-dots.forEach((dot, i) => {
-if (i === index) dot.classList.add("bg-amber-600", "scale-125", "shadow-md");
-else dot.classList.remove("bg-amber-600", "scale-125", "shadow-md");
-});
-}
+  const dots = [...dotsContainer.children];
+  function setActiveDot(index) {
+    dots.forEach((dot, i) => {
+      if (i === index) dot.classList.add("bg-amber-600", "scale-125", "shadow-md");
+      else dot.classList.remove("bg-amber-600", "scale-125", "shadow-md");
+    });
+  }
 
-container.addEventListener("scroll", () =>
-requestAnimationFrame(() => {
-const scrollLeft = container.scrollLeft;
-const cardWidth = container.clientWidth;
-const index = Math.round(scrollLeft / cardWidth);
-setActiveDot(index);
-})
-);
+  container.addEventListener("scroll", () =>
+    requestAnimationFrame(() => {
+      const scrollLeft = container.scrollLeft;
+      const cardWidth = container.clientWidth;
+      const index = Math.round(scrollLeft / cardWidth);
+      setActiveDot(index);
+    })
+  );
 
-setActiveDot(0);
+  setActiveDot(0);
 });
 </script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-const openTempleModal = document.getElementById("openTempleModal");
-const templeModal = document.getElementById("templeModal");
-const closeTempleModal = document.getElementById("closeTempleModal");
+  const openTempleModal = document.getElementById("openTempleModal");
+  const templeModal = document.getElementById("templeModal");
+  const closeTempleModal = document.getElementById("closeTempleModal");
 
-if (openTempleModal && templeModal && closeTempleModal) {
-openTempleModal.addEventListener("click", () => {
-templeModal.classList.remove("hidden");
-document.body.style.overflow = "hidden";
-});
+  if (openTempleModal && templeModal && closeTempleModal) {
+    openTempleModal.addEventListener("click", () => {
+      templeModal.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    });
 
-const closeModal = () => {
-templeModal.classList.add("hidden");
-document.body.style.overflow = "auto";
-};
+    const closeModal = () => {
+      templeModal.classList.add("hidden");
+      document.body.style.overflow = "auto";
+    };
 
-closeTempleModal.addEventListener("click", closeModal);
-templeModal.addEventListener("click", (e) => {
-if (e.target === templeModal) closeModal();
-});
+    closeTempleModal.addEventListener("click", closeModal);
+    templeModal.addEventListener("click", (e) => {
+      if (e.target === templeModal) closeModal();
+    });
 
-document.addEventListener("keydown", (e) => {
-if (e.key === "Escape" && !templeModal.classList.contains("hidden")) closeModal();
-});
-}
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !templeModal.classList.contains("hidden")) closeModal();
+    });
+  }
 });
 </script>
 
 <script>
 function createWhatsAppDonationLink() {
-const phone = "919902105637"; // Temple WhatsApp number
-const message = `🙏 Namaskara,
+  const phone = "919902105637"; // Temple WhatsApp number
+  const message = `🙏 Namaskara,
 I have made a *donation* to Lord Shree Dhanvantari Temple.
 Here are my details:
 
@@ -1793,301 +1798,318 @@ Here are my details:
 Please confirm my donation.
 Thank you. 🙏`;
 
-return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 }
 
 function openModal(type) {
-const modal = document.getElementById("modal");
-const panel = document.getElementById("modalPanel");
+  const modal = document.getElementById("modal");
+  const panel = document.getElementById("modalPanel");
 
-if (type === "donate") {
-const upiID = "9902105637";
-const upiNote = encodeURIComponent("Temple Donation - Lord Dhanvantari Temple");
-    const upiUrl = `upi://pay?pa=${upiID}@upi&pn=ShreeDhanvantariTemple&cu=INR&tn=${upiNote}`;
+  if (type === "donate") {
+    const upiID = "9902105637";
+    const upiNote = encodeURIComponent("Temple Donation - Lord Dhanvantari Temple");
     const upiUrl = `upi://pay?pa=${upiID}@ybl&pn=ShreeDhanvantariTemple&cu=INR&tn=${upiNote}`;
-const whatsappUrl = createWhatsAppDonationLink();
+    const whatsappUrl = createWhatsAppDonationLink();
 
-panel.innerHTML = `
-     <div class="text-center animate-fadeIn">
-       <h3 class="text-2xl md:text-3xl font-extrabold text-amber-800 mb-3">
-         🙏 Support the Temple
-       </h3>
-       <p class="text-slate-700 mb-4 text-base">
-         Your kind donation helps maintain temple activities, poojas, and Ayurveda initiatives.
-       </p>
+    panel.innerHTML = `
+      <div class="text-center animate-fadeIn">
+        <h3 class="text-2xl md:text-3xl font-extrabold text-amber-800 mb-3">
+          🙏 Support the Temple
+        </h3>
+        <p class="text-slate-700 mb-4 text-base">
+          Your kind donation helps maintain temple activities, poojas, and Ayurveda initiatives.
+        </p>
 
-       <div class="bg-gradient-to-b from-amber-50 to-yellow-50 border border-amber-200 
-                   rounded-2xl shadow-md p-5 mx-auto w-fit">
-         <img src="images/qrcode/qrcode.png" 
-              alt="Temple UPI QR" 
-              class="w-44 h-44 mx-auto object-contain rounded-xl shadow-md 
-                     border border-amber-100 p-2 bg-white">
-         <p class="mt-3 text-base font-semibold text-amber-800">
-           Scan this QR code to donate securely
-         </p>
-         <p class="text-sm text-slate-700">
-           UPI ID: <span class="font-bold text-amber-800">${upiID}</span>
-         </p>
-       </div>
+        <div class="bg-gradient-to-b from-amber-50 to-yellow-50 border border-amber-200 
+                    rounded-2xl shadow-md p-5 mx-auto w-fit">
+          <img src="images/qrcode/qrcode.png" 
+               alt="Temple UPI QR" 
+               class="w-44 h-44 mx-auto object-contain rounded-xl shadow-md 
+                      border border-amber-100 p-2 bg-white">
+          <p class="mt-3 text-base font-semibold text-amber-800">
+            Scan this QR code to donate securely
+          </p>
+          <p class="text-sm text-slate-700">
+            UPI ID: <span class="font-bold text-amber-800">${upiID}</span>
+          </p>
+        </div>
 
-       <a href="${upiUrl}" 
-          class="mt-5 inline-block px-6 py-3 rounded-full font-semibold text-white
-                 bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400
-                 shadow-md hover:shadow-amber-300/60 hover:scale-105 transition">
-         💳 Donate via UPI App
-       </a>
+        <a href="${upiUrl}" 
+           class="mt-5 inline-block px-6 py-3 rounded-full font-semibold text-white
+                  bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400
+                  shadow-md hover:shadow-amber-300/60 hover:scale-105 transition">
+          💳 Donate via UPI App
+        </a>
 
-       <!-- 🌿 WhatsApp Button -->
-       <a href="${whatsappUrl}" target="_blank"
-          class="mt-4 inline-block px-6 py-3 rounded-full font-semibold text-white
-                 bg-[#25D366] hover:bg-[#1EBE5D] shadow-md hover:scale-105 transition">
-         💬 Send Details via WhatsApp
-       </a>
+        <!-- 🌿 WhatsApp Button -->
+        <a href="${whatsappUrl}" target="_blank"
+           class="mt-4 inline-block px-6 py-3 rounded-full font-semibold text-white
+                  bg-[#25D366] hover:bg-[#1EBE5D] shadow-md hover:scale-105 transition">
+          💬 Send Details via WhatsApp
+        </a>
 
-       <p class="mt-4 text-sm text-slate-600 italic">
-         Kindly mention <b>“Temple Donation”</b> in your payment remarks.
-       </p>
+        <p class="mt-4 text-sm text-slate-600 italic">
+          Kindly mention <b>“Temple Donation”</b> in your payment remarks.
+        </p>
 
-       <div class="mt-6">
-         <button onclick="closeModal()" 
-                 class="px-6 py-2 rounded-full bg-amber-50 text-amber-800 font-semibold 
-                        hover:bg-amber-100 border border-amber-200 shadow-sm transition">
-           ✕ Close
-         </button>
-       </div>
-     </div>
-   `;
-}
+        <div class="mt-6">
+          <button onclick="closeModal()" 
+                  class="px-6 py-2 rounded-full bg-amber-50 text-amber-800 font-semibold 
+                         hover:bg-amber-100 border border-amber-200 shadow-sm transition">
+            ✕ Close
+          </button>
+        </div>
+      </div>
+    `;
+  }
 
-modal.classList.remove("hidden");
-document.body.style.overflow = "hidden";
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
 }
 
 function closeModal() {
-const modal = document.getElementById("modal");
-const panel = document.getElementById("modalPanel");
-modal.classList.add("hidden");
-panel.innerHTML = "";
-document.body.style.overflow = "auto";
+  const modal = document.getElementById("modal");
+  const panel = document.getElementById("modalPanel");
+  modal.classList.add("hidden");
+  panel.innerHTML = "";
+  document.body.style.overflow = "auto";
 }
 </script>
 
 
 <script>
 function openVerseImageModal(src) {
-const modal = document.getElementById("verseImageModal");
-const img = document.getElementById("verseImageModalImg");
-img.src = src;
-modal.classList.remove("hidden");
-document.body.style.overflow = "hidden";
+  const modal = document.getElementById("verseImageModal");
+  const img = document.getElementById("verseImageModalImg");
+  img.src = src;
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
 }
 
 function closeVerseImageModal() {
-const modal = document.getElementById("verseImageModal");
-modal.classList.add("hidden");
-document.body.style.overflow = "auto";
+  const modal = document.getElementById("verseImageModal");
+  modal.classList.add("hidden");
+  document.body.style.overflow = "auto";
 }
 
 // Click outside to close
 document.getElementById("verseImageModal").addEventListener("click", (e) => {
-if (e.target.id === "verseImageModal") closeVerseImageModal();
+  if (e.target.id === "verseImageModal") closeVerseImageModal();
 });
 
 // ESC key to close
 document.addEventListener("keydown", (e) => {
-if (e.key === "Escape") closeVerseImageModal();
+  if (e.key === "Escape") closeVerseImageModal();
 });
 </script>
 
 <script>
 function openInvitationModal(imageSrc) {
-const modal = document.getElementById("invitationModal");
-const image = document.getElementById("invitationImage");
-image.src = imageSrc;
-modal.classList.remove("hidden");
-document.body.style.overflow = "hidden";
+  const modal = document.getElementById("invitationModal");
+  const image = document.getElementById("invitationImage");
+  image.src = imageSrc;
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
 }
 
 function closeInvitationModal() {
-const modal = document.getElementById("invitationModal");
-modal.classList.add("hidden");
-document.body.style.overflow = "auto";
+  const modal = document.getElementById("invitationModal");
+  modal.classList.add("hidden");
+  document.body.style.overflow = "auto";
 }
 
 // Close modal when clicking outside or pressing Escape
 document.addEventListener("DOMContentLoaded", () => {
-const modal = document.getElementById("invitationModal");
-const closeBtn = document.getElementById("closeInvitationModal");
+  const modal = document.getElementById("invitationModal");
+  const closeBtn = document.getElementById("closeInvitationModal");
 
-if (modal && closeBtn) {
-closeBtn.addEventListener("click", closeInvitationModal);
-modal.addEventListener("click", (e) => {
-if (e.target === modal) closeInvitationModal();
-});
-}
+  if (modal && closeBtn) {
+    closeBtn.addEventListener("click", closeInvitationModal);
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeInvitationModal();
+    });
+  }
 
-document.addEventListener("keydown", (e) => {
-if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-closeInvitationModal();
-}
-});
-});
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-const qrImage = document.querySelector('#donate img[alt="Temple UPI QR"]');
-if (qrImage) {
-qrImage.style.cursor = "pointer";
-qrImage.title = "Click to open payment options";
-
-qrImage.addEventListener("click", () => {
-openModal("donate"); // reuse your existing modal function
-});
-}
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+      closeInvitationModal();
+    }
+  });
 });
 </script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+  const qrImage = document.querySelector('#donate img[alt="Temple UPI QR"]');
+  if (qrImage) {
+    qrImage.style.cursor = "pointer";
+    qrImage.title = "Click to open payment options";
 
-// Generic auto-scroll function
-function setupAutoScroll(containerId, interval = 4000) {
-const container = document.getElementById(containerId);
-if (!container) return;
+    qrImage.addEventListener("click", () => {
+      openModal("donate"); // reuse your existing modal function
+    });
+  }
+});
+</script>
 
-let index = 0;
-let total = container.children.length;
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
 
-function scrollToIndex(i) {
-container.scrollTo({ left: i * container.clientWidth, behavior: "smooth" });
-}
+  // Generic auto-scroll function
+  function setupAutoScroll(containerId, interval = 4000) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
 
-function autoNext() {
-index = (index + 1) % total;
-scrollToIndex(index);
-}
+    let index = 0;
+    let total = container.children.length;
 
-// Auto scroll every few seconds
-let autoScroll = setInterval(autoNext, interval);
+    function scrollToIndex(i) {
+      container.scrollTo({ left: i * container.clientWidth, behavior: "smooth" });
+    }
 
-// Pause when hovering or interacting
-container.addEventListener("mouseenter", () => clearInterval(autoScroll));
-container.addEventListener("mouseleave", () => autoScroll = setInterval(autoNext, interval));
-container.addEventListener("touchstart", () => clearInterval(autoScroll));
-container.addEventListener("touchend", () => autoScroll = setInterval(autoNext, interval));
-}
+    function autoNext() {
+      index = (index + 1) % total;
+      scrollToIndex(index);
+    }
 
-// ✅ Apply auto-scroll to both Seva & Events sections
-setupAutoScroll("seva-scroll", 4000);
-setupAutoScroll("event-scroll", 5500);
+    // Auto scroll every few seconds
+    let autoScroll = setInterval(autoNext, interval);
+
+    // Pause when hovering or interacting
+    container.addEventListener("mouseenter", () => clearInterval(autoScroll));
+    container.addEventListener("mouseleave", () => autoScroll = setInterval(autoNext, interval));
+    container.addEventListener("touchstart", () => clearInterval(autoScroll));
+    container.addEventListener("touchend", () => autoScroll = setInterval(autoNext, interval));
+  }
+
+  // ✅ Apply auto-scroll to both Seva & Events sections
+  setupAutoScroll("seva-scroll", 4000);
+  setupAutoScroll("event-scroll", 5500);
 
 });
 </script>
 
-<script>
+  <script>
 document.addEventListener("DOMContentLoaded", () => {
-const emailModal = document.getElementById("emailModal");
-const openEmailModal = document.getElementById("openEmailModal");
-const closeEmailModal = document.getElementById("closeEmailModal");
-const form = document.getElementById("templeContactForm");
-const successMsg = document.getElementById("formSuccess");
-const errorMsg = document.getElementById("formError");
+  const emailModal = document.getElementById("emailModal");
+  const openEmailModal = document.getElementById("openEmailModal");
+  const closeEmailModal = document.getElementById("closeEmailModal");
+  const form = document.getElementById("templeContactForm");
+  const successMsg = document.getElementById("formSuccess");
+  const errorMsg = document.getElementById("formError");
 
-// Open modal
-openEmailModal.addEventListener("click", () => {
-emailModal.classList.remove("hidden");
-document.body.style.overflow = "hidden";
+  // Open modal
+  openEmailModal.addEventListener("click", () => {
+    emailModal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  });
+
+  // Close modal
+  const closeModal = () => {
+    emailModal.classList.add("hidden");
+    document.body.style.overflow = "auto";
+  };
+
+  closeEmailModal.addEventListener("click", closeModal);
+  emailModal.addEventListener("click", (e) => {
+    if (e.target === emailModal) closeModal();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !emailModal.classList.contains("hidden")) closeModal();
+  });
+
+  // Form submission via AJAX
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    successMsg.classList.add("hidden");
+    errorMsg.classList.add("hidden");
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        successMsg.classList.remove("hidden");
+        form.reset();
+      } else throw new Error();
+    } catch {
+      errorMsg.classList.remove("hidden");
+    }
+  });
 });
+</script>
 
-// Close modal
-const closeModal = () => {
-emailModal.classList.add("hidden");
-document.body.style.overflow = "auto";
-};
+<script>
+function openVideoModal(videoSrc) {
+  const modal = document.getElementById("singleVideoModal");
+  const videoGrid = document.getElementById("videoGrid");
 
-closeEmailModal.addEventListener("click", closeModal);
-emailModal.addEventListener("click", (e) => {
-if (e.target === emailModal) closeModal();
-});
-document.addEventListener("keydown", (e) => {
-if (e.key === "Escape" && !emailModal.classList.contains("hidden")) closeModal();
-});
+  videoGrid.innerHTML = `
+    <div class="aspect-video rounded-xl shadow-lg overflow-hidden">
+      <video class="w-full h-full object-cover" controls autoplay>
+        <source src="${videoSrc}" type="video/mp4">
+      </video>
+    </div>
+  `;
 
-// Form submission via AJAX
-form.addEventListener("submit", async (e) => {
-e.preventDefault();
-successMsg.classList.add("hidden");
-errorMsg.classList.add("hidden");
-
-try {
-const formData = new FormData(form);
-const response = await fetch(form.action, {
-method: "POST",
-body: formData,
-headers: { Accept: "application/json" },
-});
-
-if (response.ok) {
-successMsg.classList.remove("hidden");
-form.reset();
-} else throw new Error();
-} catch {
-errorMsg.classList.remove("hidden");
+  modal.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
 }
-});
-});
 </script>
 
 
 
 <!-- 🌿 Contact Form Modal -->
 <div id="emailModal" 
-class="fixed inset-0 hidden z-[70] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
-<div class="relative bg-white rounded-3xl shadow-2xl max-w-lg w-full p-8 animate-fadeIn">
+     class="fixed inset-0 hidden z-[70] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4">
+  <div class="relative bg-white rounded-3xl shadow-2xl max-w-lg w-full p-8 animate-fadeIn">
 
-<!-- Header -->
-<div class="flex justify-between items-center mb-6 border-b border-amber-100 pb-3">
-<h4 class="text-2xl font-extrabold text-amber-800">📧 Send us a Message</h4>
-<button id="closeEmailModal"
-class="flex items-center gap-1 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-50 
-              border border-amber-200 text-amber-800 font-semibold text-sm shadow hover:scale-105 transition">
-✕ Close
-</button>
-</div>
+    <!-- Header -->
+    <div class="flex justify-between items-center mb-6 border-b border-amber-100 pb-3">
+      <h4 class="text-2xl font-extrabold text-amber-800">📧 Send us a Message</h4>
+      <button id="closeEmailModal"
+        class="flex items-center gap-1 px-4 py-2 rounded-full bg-gradient-to-r from-amber-100 to-yellow-50 
+               border border-amber-200 text-amber-800 font-semibold text-sm shadow hover:scale-105 transition">
+        ✕ Close
+      </button>
+    </div>
 
-<!-- Contact Form -->
-<form id="templeContactForm" action="https://formspree.io/f/xovyqkrq" method="POST" class="space-y-4">
+    <!-- Contact Form -->
+    <form id="templeContactForm" action="https://formspree.io/f/xovyqkrq" method="POST" class="space-y-4">
 
-<div>
-<label class="block text-sm font-semibold text-amber-800 mb-1">Full Name</label>
-<input type="text" name="name" required
-class="w-full border border-amber-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-amber-400 outline-none">
-</div>
+      <div>
+        <label class="block text-sm font-semibold text-amber-800 mb-1">Full Name</label>
+        <input type="text" name="name" required
+               class="w-full border border-amber-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-amber-400 outline-none">
+      </div>
 
-<div>
-<label class="block text-sm font-semibold text-amber-800 mb-1">Email Address</label>
-<input type="email" name="_replyto" required
-class="w-full border border-amber-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-amber-400 outline-none">
-</div>
+      <div>
+        <label class="block text-sm font-semibold text-amber-800 mb-1">Email Address</label>
+        <input type="email" name="_replyto" required
+               class="w-full border border-amber-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-amber-400 outline-none">
+      </div>
 
-<div>
-<label class="block text-sm font-semibold text-amber-800 mb-1">Message</label>
-<textarea name="message" rows="4" required
-class="w-full border border-amber-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-amber-400 outline-none"></textarea>
-</div>
+      <div>
+        <label class="block text-sm font-semibold text-amber-800 mb-1">Message</label>
+        <textarea name="message" rows="4" required
+                  class="w-full border border-amber-200 rounded-lg px-3 py-2 focus:ring-2 focus:ring-amber-400 outline-none"></textarea>
+      </div>
 
-<button type="submit"
-class="w-full py-3 rounded-full bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400 
-              text-white font-semibold shadow-md hover:shadow-amber-300/60 hover:scale-105 transition">
-✨ Send Message
-</button>
+      <button type="submit"
+        class="w-full py-3 rounded-full bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-400 
+               text-white font-semibold shadow-md hover:shadow-amber-300/60 hover:scale-105 transition">
+        ✨ Send Message
+      </button>
 
-<p id="formSuccess" class="text-green-700 font-semibold text-center hidden">✅ Message sent successfully!</p>
-<p id="formError" class="text-red-600 font-semibold text-center hidden">❌ Something went wrong. Try again.</p>
+      <p id="formSuccess" class="text-green-700 font-semibold text-center hidden">✅ Message sent successfully!</p>
+      <p id="formError" class="text-red-600 font-semibold text-center hidden">❌ Something went wrong. Try again.</p>
 
-</form>
-</div>
+    </form>
+  </div>
 </div>
 
 </body>
